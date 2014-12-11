@@ -28,4 +28,39 @@
             }
         }
     }
+    .bottom_menu{
+        border: none;
+        padding: 5rem 0;
+        .top{
+            margin: 0 0 5rem;
+            a{
+                color: @color_yelow;
+                font-size: 1.7rem;
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                padding: 0 0 0 6rem;
+                    span{
+                        border-bottom: 1px solid #5c592d;
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: 3rem;
+                        top: 0;
+                        width: 21px;
+                        height: 18px;
+                        background: url(../img/link_ico.png) no-repeat;
+                    }
+                    &:hover span{
+                        border-color: transparent;
+                    }
+            }
+        }
+    .bottom{
+        .font(1.5rem, 2rem);
+        color: #858585;
+        text-align: center;
+    }
+  }
 }
