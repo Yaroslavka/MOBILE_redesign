@@ -29,6 +29,17 @@
                 font-weight: bold;
                 color:@color_gray2;
                 margin: 0 0 1rem;
+                padding: 0 0 0 3rem;
+                position: relative;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                        background: url(../img/search_ico.png) no-repeat;
+                        width: 23px;
+                        height: 23px;
+                    }
                     sup{
                         font-size: 1.4rem;
                     }

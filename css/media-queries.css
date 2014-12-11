@@ -282,6 +282,10 @@
     .search_content_section .left_box .title{
         font-size: 2rem;
         line-height: 2.4rem;
+        position: relative; 
+            &:before{
+                
+            }
     }
     .search_content_section .left_box{
         padding: 1rem 1.25rem;

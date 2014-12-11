@@ -4,10 +4,15 @@
         <p class="title"><?php echo $this->pageH1; ?> <sup><?php echo $count; ?></sup></p>
         <!-- <div class="infoabout"><?php //echo !empty($this->pageTop)?$this->pageTop:''; ?></div> -->
     </div>
-    <div class="right_box"></div>
+    <div class="right_box">
+            <div class="menu_footer"><a href="#nav-panel"></a></div>
+    </div>
 </div>
 <div class="sort_container">
-   <div class="sort_top"><a class="sort_title" href="#">Сортировать</a></div>
+   <div class="sort_top clearfix">
+       <a class="sort_title" href="#">Сортировать</a>
+       <a href="http://medbooking.com/child" class="child_doctor">Детские врачи</a>
+    </div>
     <ul class="sort_list clearfix">
         <li class="<?php echo !empty($_GET['sort'])&&($_GET['sort']=='title_asc.asc')?'active ':''; ?>alphabet_up"><?php echo $sort->link('title_asc',null,array('rel'=>'nofollow'));?></li>
         <li class="<?php echo !empty($_GET['sort'])&&($_GET['sort']=='title_desc.desc')?'active ':''; ?>alphabet_down"><?php echo $sort->link('title_desc',null,array('rel'=>'nofollow'));?></li>

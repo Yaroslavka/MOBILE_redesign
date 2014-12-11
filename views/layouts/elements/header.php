@@ -1,7 +1,6 @@
 <div class="header_mini clearfix">
     <div class="logo_box"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">Medbooking.com</a></div>
     <div class="phone_box"><a class="phone" href="#">(499) 705-35-35</a></div>
-    <div class="menu_footer"><a href="#nav-panel"></a></div>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
