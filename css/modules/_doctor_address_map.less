@@ -56,13 +56,24 @@
             }
     }
     .beside_subway{
-        padding: 0 0 0 3rem;
+        padding: 0 0 0 4.5rem;
         margin: 0;
         color: #999;
         font-size: 1.5rem;
         margin: 0 0 0.5rem;
         .color_subway{
             font-size: 1.7rem;
+            position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -1.5rem;
+                    top: 50%;
+                    margin: -3.5px 0 0 0;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 60px;
+                }
         }
         .car{
             background: url('../img/sprite.png') no-repeat -63px -141px;
