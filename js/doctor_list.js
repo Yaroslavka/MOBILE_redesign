@@ -75,10 +75,17 @@ mb.doctorList = (function(){
             $(this).find(".beside_subway").eq(count).nextAll().hide();
         });
     }
+// Динамический рейтинг
+    var rate_dinamic = function(){
+        $(".doctor_item").each(function(){
+           $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
+        });
+    }
     var init = function(){
         search_top();
         map_slide();
         count_subway(2);
+        rate_dinamic();
     }
     return {
         init: init
