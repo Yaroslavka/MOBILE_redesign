@@ -1,0 +1,1 @@
+<?php if($model->image):?><?php echo "http://medbooking.com/".$model->getImagePath('photo');?><?php else:?><?php if(!empty($model->gender)&&$model->gender==2):?><?php echo Yii::app()->baseUrl."/img/no_img_woman.png";?><?php else:?><?php echo "http://medbooking.com/img/no_img_man.png";?><?php endif;?><?php endif;?>

@@ -1,0 +1,62 @@
+.similar_doctors_wrapper{
+    padding: 2rem 0 0 0;
+    background: #fff;
+	.full_w;
+    .title{
+        display: block;
+        color: @color_gray2;
+        margin: 0 0 1rem;
+        .font(2.2rem, 2.5rem);
+        padding: 0 0 0 1%;
+    }
+    .similar_doctors_item{
+        border-bottom: 1px solid #e0e6e9;
+            &:nth-child(even){
+                background: @color_content;;
+            }
+        .left{
+            width: 15%;
+            margin: 0 0.7rem 0 0;
+            float: left;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+        }  
+        .right{
+            float: right;
+            width: 83%;
+                .description{
+                    float: left;
+                    margin: 0 0.7rem 0 0;
+                    width: 81%;
+                    .doctor_name{
+                        a{
+                            color: @color_blue;
+                            text-decoration: none;
+                            border-bottom: 1px solid #d0dae5;
+                            .font(2.2rem, 2.5rem);
+                        }
+                    }
+                    .doctor_category{
+                        display: block;
+                        color: #adadad;
+                        .font(1.8rem, 2.2rem);
+                    }
+                }
+            .rate_box{
+                float: right;
+                width: 14.3%;
+            }
+        }
+        
+    }
+    .sames_doctor_wrapper{
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 2rem 1%;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,920 @@
+/*
+@media only screen and (min-width:600px) {
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .column_doctor{
+        width: 87%;
+    }
+    .column_btn_doctor{
+        padding: 5rem 0 0;
+    }
+}
+*/
+/* -------------------- IPHONE -------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    html{
+        font-size: 8px;
+    }
+
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .price:before{
+   
+    }
+    .num_box .rate_num_wrapper .box{
+        width: 6px;
+    }
+    .btn_add_review span:before{
+        top: -7px;
+        left: 0.5rem;
+    }
+
+      
+
+      
+      
+      
+/*----IPHONE horizont 4-----*/
+      @media only screen and (min-width:450px){
+          
+        .doctor_items_wrapper .doctor_item .doctor_wrapper .right .column_doctor{width: 82%;}
+        .num_box .rate_num_wrapper .box {width: 8px; margin: 0 0 0 0.3rem}
+        .similar_doctors_item .rate_box {width: 6.125rem;}
+      }      
+/*----IPHONE horizont 5-----*/
+      @media only screen and (min-width:550px){
+  
+      }
+}
+
+
+
+
+
+
+
+/*// iphone 5 //   @media screen and (device-aspect-ratio: 40/71) {*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .search_section .select_subway .icon:after{
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -45px 0;
+        width: 23px;
+        height: 22px;
+        margin: -11px 0 0 -11px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }  
+    .search_section .select_category .icon:after {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -20px 0;
+        width: 24px;
+        height: 9px;
+        margin: -5px 0 0 -12px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    .search_section .fake_select:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat 0 -19px;
+        width: 13px;
+        height: 9px;
+        margin: -4px 0 0 -6px;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+    }
+    .search_section input[type=submit]{
+        -webkit-appearance: none;
+    }
+    .footer .all_specialist span:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -55px -79px;
+        width: 13px;
+        height: 21px;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin: 3px 0 0 0;
+        -webkit-background-size: 50% !important;
+        background-size: 50% !important;
+    }
+    .menu_wrapper_bottom .menu a:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -20px -13px;
+        width: 24px;
+        height: 10px;
+        margin: -5px 0 0 -12px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    .header .logo{
+/*
+        background: url('../img/logo_mb_m.png') no-repeat;
+        width: 125px;
+        height: 29px;
+        margin: 0 auto;
+        display: inline-block;
+*/
+    }
+    .header .logo img{
+ 
+    }
+    .footer_three .clinic_list:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat -75px -73px;
+        width: 26px;
+        height: 27px;
+        margin: -13px 0 0 -13px;
+    }
+    .menu a:before, .menu_footer a:before {
+        content: "" !important;
+        background: url('../img/menu.png') no-repeat;
+        width: 44px  !important;
+        height: 17px  !important;
+        margin: -7px 0 0 -14px  !important;
+        position: absolute  !important;
+        left: 50%  !important;
+        top: 50%  !important;
+        -webkit-background-size: 70% !important;
+        background-size: 70% !important;
+    }
+    .menu_footer.active a:before{
+                content: "";
+                background: url(../img/menu_white.png) no-repeat !important;
+                width: 44px !important;
+                height: 17px !important;
+                margin: -9px 0 0 -21px !important;
+        -webkit-background-size: 85% !important;
+        background-size: 70% !important;
+            }
+  
+    .search_content_section .right_box:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat -46px -25px;
+        width: 25px;
+        height: 25px;
+        margin: -12px 0 0 -12px;
+    }
+    .doctor_address_map .clinic_name a:before {
+        content: "";
+        position: absolute;
+        left: -2rem;
+        background: url(../img/i_sprite.png) no-repeat -85px -115px;
+        width: 14px;
+        height: 17px;
+        top: 0;
+    }
+   .clinic_single .doctor_address_map:before {
+        content: "";
+        position: absolute;
+        right: 1rem !important;
+        top: 50% !important;
+        background: url('../img/i_sprite.png') no-repeat 0 -19px !important;
+        width: 13px !important;
+        height: 9px !important;
+        margin: -4px 0 0 !important;
+    }
+    .doctor_address_map.active:before {
+        content: "";
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat -82px -140px;
+        width: 13px;
+        height: 9px;
+        margin: -4px 0 0;
+    }
+/*    rate sprite    */
+    .sort_container{
+   
+    }
+    .sort_container ul{
+        top: 27%;    
+    }
+/*
+    .sort_container ul .alphabet_up:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat 0 -58px;
+        width: 35px;
+        height: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -5px 0 0 -17px;
+    }
+    .sort_container ul .alphabet_down:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -40px -58px;
+        width: 34px;
+        height: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -5px 0 0 -17px;
+    }
+    .sort_container ul .rate_up:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -72px -27px;
+        width: 29px;
+        height: 19px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -10px 0 0 -15px;
+    }
+    .sort_container ul .rate_down:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat -15px -28px;
+        width: 26px;
+        height: 19px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -10px 0 0 -15px;
+    }
+    .sort_container ul .active:after{
+        height: 2px;
+    }
+*/
+    .doctor_address_map .beside_subway .car {
+        background: url('../img/car_ico.png') no-repeat;
+        width: 11px;
+        height: 8px;
+        display: inline-block;
+        -webkit-background-size: 90%;
+        background-size: 90%;
+    }
+    .doctor_address_map .beside_subway .people {
+        background: url('../img/people_ico.png') no-repeat;
+        width: 6px;
+        height: 8px;
+        display: inline-block;
+        -webkit-background-size: 90%;
+        background-size: 90%;
+    }
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .column_doctor{
+        margin: -0.5rem 0 0;
+    }
+    .doctor_items_wrapper .doctor_item .name{
+/*
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin: 0 0 0.5rem;
+        font-weight: normal;
+*/
+    }
+
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .doctor_category{
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+   
+    }
+    .search_content_section .left_box .title{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .search_content_section .left_box{
+        padding: 1rem 1.25rem;
+    }
+    .search_content_section .left_box:before{
+        display: none;
+    }
+    .search_content_section{
+        height: 7rem;
+    }
+    .doctor_address_map .clinic_name a{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .left strong{
+        font-size: 1.2rem;
+    }
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .price{
+        font-size: 1.8rem;
+    }
+    .footer .back_all_specialist span:before, .footer .back_all_subway span:before {
+        content: "";
+        background: url('../img/i_sprite.png') no-repeat 0 -29px !important;
+        width: 13px;
+        height: 21px;
+        right: -3rem!important;
+        left: initial!important;
+        top: 50%;
+        margin: -1px 0 0 0;
+    }
+    .doctor_info_wrapper ul li {
+        position: relative;
+        text-decoration: none;
+        line-height: 1.5;
+        margin: 0;
+    }
+    .similar_doctors_wrapper .similar_doctors_item .right .description .doctor_name a{
+        font-size: 1.7rem;
+    }
+    .doctors_clinic span:before {
+        content: "";
+        position: absolute;
+        left: 0 !important;
+        top: 0 !important;
+        width: 23px;
+        height: 25px;
+        -webkit-background-size: 100% !important;
+        background-size: 100% !important;
+    }
+    .menu_wrapper_bottom .all_doctors span:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -5px;
+        background: url(../img/doc_black.png) no-repeat;
+        width: 64px;
+        height: 64px;
+        -webkit-background-size: 40%;
+        background-size: 40%;
+    }
+    .footer_two .menu_footer a:before {
+            content: "" !important;
+        background: url('../img/menu.png') no-repeat;
+        width: 44px  !important;
+        height: 17px  !important;
+        margin: -7px 0 0 -22px  !important;
+        position: absolute  !important;
+        left: 50%  !important;
+        top: 50%  !important;
+        -webkit-background-size: 70% !important;
+        background-size: 70% !important;
+    }
+    .footer .back:before {
+        background: url('../img/i_sprite.png') no-repeat -25px -102px !important;
+        width: 23px !important;
+        height: 22px !important;
+        margin: -11px 0 0 -11px!important;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    .footer .all_specialist_check span:before, .footer .back_all_specialist span:before, .footer .back_all_subway span:before {
+        content: "";
+        background: url(../img/arrow_right.png) no-repeat !important;
+        width: 33px;
+        height: 21px;
+        position: absolute;
+        left: 11.5rem!important;
+        top: 5px!important;
+        -webkit-background-size: 50% !important;
+        background-size: 50% !important;
+        
+    }
+    .footer .doc_ico.all_specialist_check span:before, .footer .back_all_specialist span:before, .footer .back_all_subway span:before {
+        content: "";
+        background: url(../img/arrow_left.png) no-repeat !important;
+        width: 33px;
+        height: 21px;
+        position: absolute;
+        left: 1rem!important;
+        top: 5px!important;
+        -webkit-background-size: 50% !important;
+        background-size: 50% !important;
+        
+    }
+    .items_specialist_list_check li.active a:before {
+        content: "";
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        background: url('../img/check_ico.png') no-repeat;
+        width: 64px;
+        height: 64px;
+        margin: -10px 0 0;
+        background-size: 25% !important;
+    }
+    .footer .back_check_menu span:before {
+        content: "";
+        background: url(../img/arrow_right.png) no-repeat !important;
+        width: 33px;
+        height: 21px;
+        position: absolute;
+        left: 12rem!important;
+        top: 5px!important;
+        -webkit-background-size: 50% !important;
+        background-size: 50% !important;
+    }
+    .items_specialist_list_check li a{
+        font-size: 1.7rem;
+    }
+  
+    .fixed_top .name{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin: 0 0 0.5rem;
+        display: none;
+    }
+    .similar_clinic_wrapper .similar_doctors_items .right{
+        width: 85% !important;
+    }
+/*    popup   */
+    .order_wrapper .top,
+    .order_wrapper_exit .top{
+        height: 5rem;
+    }
+    .order_wrapper .close:before,
+    .order_wrapper_exit .close:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat 0 -90px;
+        width: 23px;
+        height: 23px;
+        margin: -11px 0 0 -11px;
+    }
+    .order_wrapper .title_box, .order_wrapper .title_box_home{
+        padding: 1rem 0;
+    }
+    .order_wrapper form .name_text:before,
+    .order_wrapper form .phone_text:before{
+        max-width: 7rem;
+        min-width: 5rem;
+    }
+    .order_wrapper form .name_text:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat -105px -109px;
+        width: 25px;
+        height: 24px;
+        margin: -12px 0 0 1rem;
+        z-index: 3;
+    }
+    .order_wrapper form .phone_text:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat -107px -135px;
+        width: 23px;
+        height: 15px;
+        margin: -7px 0 0 1rem;
+        z-index: 3;
+    }
+    .order_wrapper form .row{
+        height: 6rem;
+        margin: 0 0 0.7rem;
+    }
+    .order_wrapper form input[type=submit]{
+        line-height: 6rem;
+    }
+    .order_wrapper form {
+        padding: 1rem 2%;
+    }
+    .order_wrapper .form_box{
+        padding: 2rem 0 2rem;
+    }
+    .order_wrapper_exit .top{
+        margin: 0 0 2rem;
+    }
+    .order_wrapper_exit .title_box{
+        margin: 0;
+        padding: 0 0 2rem;
+    }
+    .order_wrapper_exit .middle .btn_box{
+        padding: 2rem 2% 2rem;
+    }
+    .footer .doctor_list:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url('../img/i_sprite.png') no-repeat -75px 0;
+        width: 23px;
+        height: 25px;
+        margin: -12px 0 0 -11px;
+    }
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .left .inner{
+        padding: 0.2rem;
+    }
+    .network_panel p:before {
+        content: "";
+        position: absolute;
+        left: -4%;
+        top: 50%;
+        margin: -10px 0 0 -10px;
+        background: url('../img/i_sprite.png') no-repeat -106px -47px;
+        width: 19px;
+        height: 19px;
+    }
+    .network_panel:before {
+        content: "";
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        margin: -4px 0 0 -6px;
+        background: url('../img/i_sprite.png') no-repeat -72px -124px;
+        width: 12px;
+        height: 8px;
+    }
+    .network_panel.active:before {
+        content: "";
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        margin: -4px 0 0 -6px;
+        background: url('../img/i_sprite.png') no-repeat -72px -114px;
+        width: 12px;
+        height: 8px;
+    }
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .description,
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .price,
+    .experience{
+        font-size: 1.45rem;
+        line-height: 1.6rem;
+    }
+     .experience{
+     
+     }
+    .num_box .rate_num_wrapper .box{
+        height: 20px;
+    }
+    .num_box strong{
+        line-height: 20px;
+    }
+    .doctor_address_map .clinic_name a, 
+    .similar_doctors_wrapper .similar_doctors_item .right .description .doctor_name a{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .doctor_address_map .address_doctor{
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin: 0 0 0.6rem;
+    }
+    .doctor_address_map .beside_subway{
+        font-size: 1.4rem;
+        margin: 0 0 0.2rem;
+    }
+    .doctor_address_map .beside_subway .color_subway{
+        font-size: 1.4rem;
+    }
+    .doctor_info_wrapper ul,
+    .reviews_clinic_wrapper .reviews_clinic_item .bottom,
+    .doctor_info_wrapper p,
+    .info_clinic p{
+        font-size: 1.4rem;
+    }
+    .doctor_info_wrapper .title{
+        margin: 0 0 0.5rem;
+    }
+    .doctor_info_wrapper p{
+        margin: 0 0 0.5rem;
+    }
+    .clinic_items_wrapper .clinic_item .name{
+/*
+        font-size: 1.7rem;
+        margin: 0 0 0.5rem;
+*/
+    }
+    .similar_clinic_wrapper{
+        padding: 0.5rem 0;
+    }
+    .similar_doctors_wrapper .title{
+        margin: 0;
+    }
+    .similar_doctors_wrapper .title{
+        padding: 0 0 0 1%;
+        margin: 0 0 0;
+    }
+/*  БЛОГИ  */
+    .blog_top_menu_wrapper .right_menu:before {
+    content: "";
+	background: url('../img/i_sprite.png') no-repeat -77px -104px;
+	width: 24px;
+	height: 9px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -4px 0 0 -12px;
+    }
+    .blog_top_menu_wrapper{
+        height: 4rem;
+    }
+    .blog_top_menu_wrapper .title{
+        line-height: 4rem;
+        font-size: 2rem;
+    }
+    .blog_top_menu_wrapper .left{
+        width: 79.45%;
+        border-bottom-width: 2px;
+    }
+    .blog_top_menu_wrapper .right_menu{
+        border-bottom-width: 2px;
+    }
+    .footer_two .search_specialist span:before {
+        background: url('../img/i_sprite.png') no-repeat -78px -48px;
+        width: 23px;
+        height: 23px;
+        top: -3px;
+        left: 1rem;
+    }
+    .handbook_patient_content h2{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .handbook_patient_content ul p{
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .handbook_patient_content ul li{
+        padding: 1rem 1% 0;
+        background: #fff;
+    }
+    .blog_content.handbook_patient_content{
+        padding: 7rem 1% 10.5rem!important;
+    }
+    .paginator {
+        margin-top: 1rem!important;
+    }
+    /*  social  */
+    .social_container .soc_g:before {
+        content: "";
+        background: url('../img/i_social.png') no-repeat 0 0;
+        width: 42px;
+        height: 42px;
+        margin: -21px 0 0 -21px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    .social_container .soc_f:before {
+        content: "";
+        position: absolute;
+        background: url('../img/i_social.png') no-repeat -47px 0;
+        width: 42px;
+        height: 42px;
+        left: 50%;
+        top: 50%;
+        margin: -21px 0 0 -21px;
+    }
+    .social_container .soc_v:before {
+        content: "";
+        position: absolute;
+        background: url('../img/i_social.png') no-repeat -93px 0;
+        width: 42px;
+        height: 42px;
+        left: 50%;
+        top: 50%;
+        margin: -21px 0 0 -21px;
+    }
+    .social_container{
+        margin: 0 0 -3rem;
+    }
+    .fixed_category_list{
+        margin: -4.3rem 0 0;
+    }
+    .doctor_address_map .clinic_name span:before {
+        content: "";
+        position: absolute;
+        left: -2.5rem;
+        background: url('../img/caduceus.png') no-repeat 0 0;
+        width: 15px;
+        height: 19px;
+        top: -1px;
+        -webkit-background-size: 93%;
+        background-size: 93%;
+    }
+/*  Блок отзывов  */
+    .reviews_box_wrap .title{
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        font-size: .9rem;
+        padding: 0 0 0.6rem;
+        line-height: 1.5rem;
+        color: #fff;
+    }
+    .reviews_box{
+        width: 66%;
+        background: url(../img/comment_ico.png) no-repeat;
+        background-size: contain;
+        height: 25px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        position: relative;
+        margin: 0 0 1rem;
+    }
+    .reviews_box span{
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        height: 100%;
+        text-align: center;
+        padding: 0.5rem 0 0;
+    }
+    .rate_box .desc:before {
+        content: "";
+        position: absolute;
+        right: -1.6rem;
+        top: -17px;
+        background: url(../img/yes_ico.png) no-repeat;
+        width: 25px;
+        height: 25px;
+        background-size: 50%;
+    }
+    .reviews_box_wrap{
+        right: 0 !important;
+    }
+    .doctor_single .column_btn_doctor{
+
+    }
+    .full_btn {
+        width: 80%!important;
+    }
+    .doctor_list+.footer .all_specialist span:before {
+        content: "";
+        position: absolute;
+        left: 0.5rem !important;
+        top: 2px !important;
+        background: url('../img/arrow_left.png') no-repeat;
+        width: 33px!important;
+        background-size: 50%;
+        height: 21px!important;
+    }
+/*    ----------------------------------------------------      */
+    .footer .back:before, .footer .back_two:before {
+        background: url(../img/close_ico.png) no-repeat!important;
+        width: 64px!important;
+        height: 64px!important;
+        margin: -17px 0 0 -15px!important;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-background-size: 50% !important;
+        background-size:50% !important ;
+    }
+    .clinic_list+.footer .all_specialist span:before, .network_list+.footer .all_specialist span:before {
+        content: "";
+        position: absolute;
+        left: 0.5rem!important;
+        top: 2px!important;
+        background: url('../img/arrow_left.png') no-repeat;
+        width: 33px!important;
+        height: 21px!important;
+        -webkit-background-size: ;
+        background-size: ;
+    }
+    .clinic_menu a:before{
+        background-size: 33%;
+    }
+    .doctor_menu a:before{
+        background-size: 33%;
+    }
+    .fixed_top .call_btn:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url(../img/phone_ico.png) no-repeat;
+        width: 64px;
+        height: 64px;
+        margin: -11px 0 0 -12px;
+        background-size: 40%;
+    }
+    .all_clinic span:before {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        background: url(../img/caduceus.png) no-repeat;
+        left: 2rem;
+        top: 1px;
+        background-size: 30%!important;
+    }
+    .clinic_single .address_doctor {
+        padding: 0 0 0 1.3rem!important;
+        position: relative;
+    }
+    .clinic_single .address_doctor:before {
+        content: "";
+        width: 42px;
+        height: 64px;
+        background: url(../img/nav_ico2.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: 20%;
+    }
+    .clinic_single .clinic_items_wrapper .doctor_address_map p {
+        padding: 0 0 0 1.6rem;
+    }
+    .items_specialist_list_check{
+        height: 105.5%
+    }
+    .rate_box .count {
+        padding: 0 2rem 4px .5rem;
+    }
+    .doctor_items_wrapper .doctor_item .second_name {
+        margin: 0 0 0.4rem;
+    }
+    .blog_footer .theme_blog_wrap a span:before {
+        content: "";
+        background: url(../img/arrow_left.png) no-repeat!important;
+        width: 33px;
+        height: 21px;
+        position: absolute;
+        left: .5rem!important;
+        top: 5px!important;
+        background-size: 50% !important;
+    }
+    .blog_footer .theme_blog_wrap a.active span:before {
+        content: "";
+        position: absolute;
+        left: 21.5rem!important;
+        top: 5px!important;
+        background: url(../img/arrow_right.png) no-repeat!important;
+        width: 33px;
+        height: 21px;
+        background-size: 50% !important;
+    }
+    .article_list_wrapper{
+        margin: -4rem 0 0;
+    }
+    .service-clinic-table .title_row .clinic-rate span.desc:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url(../img/rate_b.png) no-repeat;
+        width: 50px;
+        height: 36px;
+        margin: -10px 0 0 -10px;
+        background-size: 60%;
+    }
+    .service-clinic-table .title_row .clinic-rate span.asc:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url(../img/rate_t.png) no-repeat;
+        width: 54px;
+        height: 36px;
+       margin: -10px 0 0 -10px;
+        background-size: 60%;
+    }
+    .blog_content blockquote:before {
+        background-size: 50%;
+    }
+    .blog_content blockquote{
+        width: 117%;
+    }
+    .blog_content .title {
+        background: #eff5fb;
+        border-bottom: 4px solid #dae2ea;
+        margin: -3.4rem 0 1.5rem -1%!important;
+        width: 102%;
+        padding: 1rem;
+    }
+    .network_panel p:before {
+        content: "";
+        position: absolute;
+        left: -6.3%;
+        top: 67%;
+        margin: -17px 0 0 0;
+        background: url(../img/caduceus.png) no-repeat;
+        width: 64px;
+        height: 64px;
+        background-size: 25%!important;
+    }
+
+}
+
+/*
+@media only screen and (min-width:700px){
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .column_doctor{
+        width: 90%;
+    }
+    .clinic_items_wrapper .clinic_item .clinic_wrapper .right .column_doctor{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:849px) {
+    .rate_box, .reviews_box{width: 6.125rem;}
+    .doctor_items_wrapper .doctor_item .doctor_wrapper .right .column_doctor{width: 90%;}
+    .column_btn_doctor span{padding: 2rem 0.5rem !important;}
+    .doctor_items_wrapper .column_btn_doctor{padding: 2rem 0;}
+    
+}*/

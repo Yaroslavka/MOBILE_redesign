@@ -1,0 +1,82 @@
+.shedule_container{
+    margin: 0 0 2rem 0;
+    clear: both;
+    .day_row{
+        .day{
+            margin: 0 -1px -1px 0;
+            border: 1px solid #fff;
+            background: #f2f2f2;
+            width: 14.3%; 
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            .font(2rem, 5rem);
+            height: 5rem;
+            color: @color_gray2;
+            span{
+                display: block;
+            }
+        }
+    }
+    .time_row{
+        &>div{
+            margin: -1px -1px 0 0;
+            background: #f2f2f2;
+            height: 5rem;
+            border: 1px solid #fff;
+        }
+        .time_days{
+            float: left;
+            .font(1.7rem, 5rem);
+            color: #333;
+                span{
+                    .font(1.7rem, 2.5rem);
+                    color: #333;
+                }
+        }
+        .weekend{
+            float: left;
+            width: 14.3%;
+            text-align: center;
+            color: #333;
+            .font(1.8rem, 2rem);
+            padding: 0.4rem 0 0 0;
+            span{
+                display: block;
+                .font(1.8rem, 2rem);
+            }
+        }
+        .time_weekdays_all{
+            border-bottom: 2px solid #e8e8e8 !important;
+            text-align: center;
+            width: 71.3%;
+            float: left;
+            .font(1.8rem, 5rem);
+            color: #333;
+            margin: 0 -4px 0 0;
+        }
+    }
+    .time_days{
+        text-align: center; 
+        width: 14.3%;
+        span{
+            display: block;
+        }
+    }
+    .time_Saturday{
+        border-bottom: 2px solid #c6d3e0 !important;
+    }
+    .time_Sunday{
+        border-bottom: 2px solid #e9bfbf !important;
+    }
+    .day_Saturday,
+    .time_Saturday{
+        background: #deeaf3 !important;
+    }
+    .day_Sunday,
+    .time_Sunday{
+        color: #e81818 !important;
+        background: #fee8e8!important;
+        
+    }
+}

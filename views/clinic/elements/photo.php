@@ -1,0 +1,1 @@
+<?php if($model->getImagePath('photo')):?><?php echo CHtml::image("http://medbooking.com/".$model->getImagePath('photo'),$model->title,array('itemprop'=>'image'));?><?php else:?><?php echo CHtml::image("http://medbooking.com/img/clinic_img.png",$model->title,array('itemprop'=>'image'));?><?php endif;?>

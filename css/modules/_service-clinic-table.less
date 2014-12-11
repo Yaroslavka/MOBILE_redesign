@@ -1,0 +1,237 @@
+.service-clinic-table{
+    .full_w;
+    .title_row{
+      
+        .cell{
+            padding: 2rem 1%;
+            span{
+                .font(2.2rem, 2.5rem);
+                display: block;
+                width: 100%;
+                height: 100%;
+                //position: absolute;
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        text-align: center;
+                    }
+            }
+        }
+        .clinic-rate{
+            padding: 0;
+            a{
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                font-size: 0;
+                cursor: pointer;
+            }
+            span.desc{ 
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    background: url('../img/rate_b.png') no-repeat;
+                    width: 50px;
+                    height: 36px;
+                    margin: -18px 0 0 -25px;
+                }
+            }
+            span.asc{
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    background: url('../img/rate_t.png') no-repeat;
+                    width: 54px;
+                    height: 36px;
+                    margin: -18px 0 0 -27px;
+                }
+            }
+        }
+    }
+    .row.active{
+        .cell{
+            background: #fff;
+            border-left: none;
+            border-right: none;
+        }
+    }
+    .cell{
+        float: left;
+        border: 1px solid #dae2ea;
+        padding: 0.5rem 1%;
+        margin: 0 0 -1px;
+        min-height: 52px;
+        background: #eff5fb;
+    }
+    .clinic-name{
+        width: 60%;
+        color: #333;
+        border-right: none;
+            a{
+                width: 1000px;
+                vertical-align: middle;
+                display: table-cell;
+                color: @color_blue;
+                .font(1.5rem, 2rem);
+                text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+            }
+    }
+    .clinic-rate{
+        width: 15%;
+        text-align: center;
+        color: #eff5fb;
+        position: relative;
+            span{
+                //position: absolute;
+            }
+        
+    }
+    .clinic-price{
+        width: 25%;
+        color: #9b2c2c;
+        background: #fff0f0;
+        font-weight: bold;
+        text-align: center;
+        border-left: none;
+        .font(1.7rem, 2rem);
+            p{
+                width: 1000px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            a{
+                color: #9b2c2c;
+                font-weight: bold;
+                text-decoration: none;
+            }
+    }
+    .special-wrapper{
+        clear: both;
+        display: none;
+            .similar_doctors_wrapper{
+                width: 100% !important;
+                margin-left: 0 !important;
+                padding: 0 !important;
+            }
+        .rate_box{
+            width: 19% !important;
+        }
+    }
+    .rate_box{
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        //margin:-37px 0 0;
+        width: 90% !important;
+        max-width: 35px;
+        top: 1.7rem !important;
+    }
+    .special-wrapper{
+        .similar_doctors_item{
+            background: #fff !important;
+            padding: 0.5rem 1rem;
+                &:last-of-type{
+                    border: none;
+                }
+        }
+        .rate_box{
+            position: static;
+            margin: 0;
+            border-color: @color_green;
+                .rate_static{
+                    background: @color_green;
+                }
+        }
+    }
+    .similar_doctors_wrapper .similar_doctors_item .right .description {
+        float: left;
+        margin: 0;
+        width: 81%;
+    }
+}
+.soc_t{
+    display: none !important;
+}
+.order_btn{
+    a{
+        color: #fff !important;
+        text-decoration: none;
+    }
+}
+.title_services{
+    display: block;
+    margin: 0 0 0.5rem;
+    .font(2rem, 2.5rem);
+}
+.article_list_wrapper{
+    margin: -2rem 0 0;
+}
+.sort{
+    a{
+        font-size: 0;
+    }
+}
+.sort_table_wrapper{
+    a{
+        display: block;
+        padding: 2rem 0;
+        color: @color_blue;
+        .font(2rem, 2.5rem);
+        text-decoration: none;
+            span{
+                border-bottom: 1px dashed @color_blue;
+            }
+    }
+}
+.sort_table_items{
+    display: none;
+    box-shadow: 1px 2px 5px;
+    position: fixed;
+    left: 50%;
+    top: 33%;
+    width: 220px;
+    margin: 0 0 0 -120px !important;
+    z-index: 60;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    li{
+        list-style: none !important;
+        width: 100%;
+        border-bottom: 1px solid #d4d4d4;
+        &:last-of-type{
+            border: none;
+        }
+        &:before{
+            display: none;
+        }
+    }
+    a{
+        padding: 1rem;
+        text-decoration: none;
+        display: block;
+    }
+}
+.title_row{
+    .cell{
+        min-height: 30px !important;
+        padding: .5rem 1% !important;
+    }
+}
+.sort_table_title{
+    color: @color_blue !important;
+    .font(1.7rem, 2rem);
+}
+.sort_table_title_price{
+    .font(1.7rem, 2rem);
+}

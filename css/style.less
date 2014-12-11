@@ -1,0 +1,1924 @@
+@import 'utilites.less';
+@import 'reset.less';
+@import 'layout.less';
+
+@import 'modules/_sort_container.less';
+@import 'modules/_reviews_clinic_wrapper.less';
+@import 'modules/_search_content_section.less';
+@import 'modules/_shedule_container.less';
+@import 'modules/_doctor_address_map.less'; 
+@import 'modules/_doctor_info_wrapper.less';
+@import 'modules/_info_clinic.less';
+@import 'modules/_rate_box.less';
+@import 'modules/_menu_nav_wrapper.less';
+@import 'modules/_menu_specialist_wrapper.less';
+@import 'modules/_search_section.less'; 
+@import 'modules/_social_container.less';
+@import 'modules/_reviews_box.less';  
+@import 'modules/_similar_doctors_wrapper.less';  
+@import 'modules/_service-clinic-table.less'; 
+@import 'modules/_order_wrapper.less'; 
+@import 'modules/_order_wrapper_exit.less'; 
+@import 'modules/_success_order.less';  
+
+        
+@import 'states.less';   
+ 
+.green_btn{
+	background: @color_green; 
+	color: #fff; 
+	display: inline-block;
+	display: inline-block;
+	text-align: center;
+	height: 3rem;
+	border-radius: 5px;
+	.font(1.2rem, 3rem); 
+	text-decoration: none;
+	width: 50%;
+}
+.call_me_square{
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5px;
+    background: @color_green;
+    display: block;
+    cursor: pointer;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 31px;
+            height: 31px;
+            margin: -15px 0 0 -15px;
+            background: url(../img/sprite.png) no-repeat;
+        } 
+}
+.overlay, .overlay_menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000 !important;
+    opacity: .5;
+    z-index: 50;
+        &:hover{
+            //ackground: #000 !important;
+        }
+}
+.full_btn{width: 75% !important;}
+.order_btn{max-width: 260px !important;}
+.reviews_clinic_wrapper .reviews_clinic_item .top{ padding: 2rem 0 0;}
+//**************************************404.html***********************************
+.logo{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+        img{
+            max-width: 100%;
+        }
+}
+.page_404{
+    .content{
+        text-align: center;
+		.top{   
+			padding: 2.5rem 1.25rem;    
+			background: @color_blue;
+			p{
+				font-size: 1.875rem;
+				color: #fff;
+			}
+			strong{
+				display: block;
+				color: #8aa1bb;
+				.font(17.5rem, 17.915rem);
+			}
+			.green_btn{
+				font-weight: bold;
+				text-decoration: none;
+				margin: 0 0 1rem;
+			}
+		}
+        .bottom{
+            padding: 2.38rem 1.25rem 2rem;
+            background: #fff;
+            .title{
+                color: @color_gray;
+                font-size: 1.875rem;
+                margin: 0 0 2rem;
+            }
+            .phone{
+                color: @color_gray;
+				.font(3rem, 1.1rem);
+            }
+            .shedule{
+                color: @color_gray;
+                font-size: 1.625rem;
+                margin: 0 0 1rem;
+                    sup{
+                        font-size: 0.8rem;
+                    }
+            }
+            .call_me_square{
+                margin: 0 auto;
+            }
+        }
+    }
+    .footer{ 
+        margin: -7.5rem 0 0;
+        .top{
+            border-top: 1px solid #dadada;
+            text-align: center;
+            background: @color_footer;
+            padding: 2rem 1.25rem 2rem;
+            p{
+				.font(2rem,1.438rem);
+				color: #7c7c7c; 
+            }
+        }
+    }
+}
+//**************************************main.html***********************************
+.more_url{
+    .font(1.7rem, 2rem);
+    color: @color_blue;
+}
+.main{
+    .content{
+        padding: 0;
+        .page_404 .content;
+        .top{
+            background: @color_blue;
+            padding: 2rem 1.25rem 2rem;
+        }
+        .bottom{
+            .page_404 .content .bottom;
+            .shedule{
+                margin: 0 0 5rem;
+            }
+        }
+    }    
+    .copy{
+        .page_404 .footer .top;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 7.5rem;
+			p{
+				line-height: 2rem;
+			}
+    }
+    
+}
+.menu_wrapper_bottom{
+   height: 7.5rem;
+    .all_specialist{
+        text-align: center;
+        background: @color_blue;
+        height: 100%;
+        float: left;
+        width: 80%;
+        border-right: 2px solid #fff;
+            span{
+                color: #fff;
+				.font(2.125rem, 7.5rem);
+                position: relative;
+                padding: 0 0 0 4.5rem;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: -10px;
+                        background: url('../img/doc_black.png') no-repeat;
+                        width: 64px;
+                        height: 64px;
+                    }
+            }
+    }
+.all_doctors{
+        text-align: center;
+        
+        height: 100%;
+        float: left;
+        width: 80%;
+        border-right: 2px solid #fff;
+            a{
+                text-decoration: none;
+            }
+            span{
+                color: #363636;
+				.font(2.125rem, 7.5rem);
+                position: relative;
+                padding: 0 0 0 4.5rem;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: -10px;
+                        background: url('../img/doc_black.png') no-repeat;
+                        width: 64px;
+                        height: 64px;
+                        background-size: 60%;
+                    }
+            }
+    }
+    .menu{
+        float: left;
+        width: 20%;
+        height: 100%;
+        background: #343434;
+        position: relative;
+        a{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            &:before{
+                content: "";
+                background: url('../img/sprite.png') no-repeat -42px -28px;
+                width: 44px;
+                height: 17px;
+                margin: -9px 0 0 -21px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+        }
+    }
+}
+/// *******************************************DOCTOR_LIST************************************
+    .doctor_snippet_description{display: block;text-decoration: none; padding: 2rem 0  1rem;}
+    .doctor_snippet_clinic{
+        display: block;
+        text-decoration: none;
+        border-top: 1px solid #dee6f0;
+        padding: 1.5rem 0 1rem 0.5rem;
+            &:first-child{
+                margin: 1rem 0 0;
+            }
+            &:last-of-type{ 
+                //padding: 0 0 2rem;
+            }
+        .doctor_address_map{
+            padding: 0 1%;
+        }
+    }
+    .beside_subway_wrapper:before{display: none;}
+.doctor_list{
+    .header_mini{
+        position: relative;
+    }
+    .content{
+        padding: 0 0 100px;
+        position: relative;
+    }
+
+}
+.doctor_items_wrapper{
+    border-top: 1px solid #fff;
+    .doctor_item{
+        position: relative;
+        border-bottom: 3px solid #d9e2ec;
+            &:nth-child(odd){
+                background: @color_content;
+            }
+            &:last-of-type{
+             
+            }
+        padding: 0 1%;
+        .name{
+            .font(2.3rem, 2.5rem);
+            margin: 0 0 0.1rem;
+        }
+        .second_name{
+            .font(1.6rem, 2rem);
+            margin: 0 0 1rem;
+        }
+        .doctor_wrapper{
+            .column_rate_reviews{
+     
+                    .rate_box{
+                        right: 0;
+                        position: absolute;
+                        top: 1.5rem;
+                        width: auto;
+                        
+                    }
+                    .reviews_box_wrap{
+                        position: absolute;
+                        right: 3%;
+                        top: 7rem !important;
+                        width: 10%;
+                    }
+            }
+            .left{
+                margin: 0 2% 0 0;
+                float: left;
+                width: 15%;
+                
+                    .inner{
+                        margin: 0 0 1rem;
+                    }
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                strong{
+                    display: block;
+                    color: @color_gray;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+            .right{
+                margin: 0.5rem 0 0;
+                width: 83%;
+                float: left;
+                    .column_doctor{
+                        float: left;
+                        width: 82%;
+                    }
+                    .column_rate_reviews{
+                        //float: right;
+                 
+                    }
+                    .doctor_category{
+                        color: #999;
+						.font(2rem, 2.2rem);
+                        margin: 0 0 0.5rem;
+                    }
+                    .description{
+                        color: #777;
+                       .font(1.6rem, 2rem);
+                        margin: 0.2rem 0.5rem 1.2rem 0;
+                    }
+                    .price{
+                        position: relative;
+                        color: #d23e2b;
+                        .font(1.6rem, 2rem);
+                        margin: 0.2rem 0 0 0;
+                        padding: 0 0 0 1.3rem;
+                        font-weight: normal;
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                background: url('../img/price_ico.png') no-repeat;
+                                width: 19px;
+                                height: 15px;
+                                left: 0;
+                                top: 2px;
+                                background-size: 45%;
+                            }
+                    }
+            }       
+        }
+    }
+    .column_btn_doctor{
+        width: 60%;
+        position: fixed;
+bottom: 0rem;
+        clear: both;
+        padding: 1rem 0 0;
+        margin: 0 0 1rem;
+        font-weight: bold;
+        text-align: left;
+        z-index: 80;
+            .order_btn{
+                color: #fff;
+                font-size: 2rem;
+                background: #F59009;
+                display: inline-block;
+                padding: 2rem 0.5rem;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+ 
+                left:33rem;
+                
+            }
+            .order_home_btn{
+                display: inline-block;
+                color: @color_blue;
+                font-size: 2rem;
+                background: #fff;
+                border: 1px solid @color_blue;
+                text-align: center;
+                padding: 2rem 0.5rem;
+                width: 29%;
+                border-radius: 5px;
+                cursor: pointer;
+                float: right;
+            }
+    }
+}
+.footer{
+    .all_specialist{
+            span{
+                &:before{
+                    content: "";
+                        background: url('../img/doc_black.png') no-repeat;
+                        width: 64px;
+                        height: 64px;
+                    left: 21rem;
+                }
+            }
+    }
+    .back_all_specialist,
+    .back_all_subway{
+        span{
+            &:before{
+//                content: "";
+//                background: url('../img/sprite.png') no-repeat -112px -158px !important;
+//                width: 24px;
+//                height: 41px;
+//                right: 8rem !important;
+//                left: initial !important;
+            }
+        }
+    }
+    .all_specialist_check, .back_all_specialist, .back_all_subway{
+        .menu_wrapper_bottom .all_specialist;
+        span{
+            color: #fff;
+            .font(2.125rem, 7.5rem);
+            position: relative;
+            padding: 0 0 0 4.5rem;
+                &:before{
+                    content: "";
+                    background: url(../img/sprite.png) no-repeat -112px -158px;
+                    width: 24px;
+                    height: 41px;
+                }
+        }
+    }
+    .back_check_menu{
+        .menu_wrapper_bottom .all_specialist;
+        span{
+            color: #fff;
+            .font(2.125rem, 7.5rem);
+            position: relative;
+            padding: 0 0 0 4.5rem;
+                &:before{
+                    content: "";
+                    background: url(../img/sprite.png) no-repeat -1px -59px;
+                    width: 24px;
+                    height: 41px;
+                    left: 13rem !important;
+                }
+        }
+        width: 100%;
+    }
+}
+.footer_three{
+    .all_specialist,
+    .back_all_specialist{
+        width: 60%;
+    }
+
+    .clinic_list{
+        width: 20%;
+        background: @color_blue;
+        border-right: 2px solid #FFFFFF;
+        float: left;
+        height: 100%;
+        position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat -151px -147px;
+                width: 49px;
+                height: 51px;
+                margin: -25px 0 0 -25px;
+            }
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+        .clinic_list .content, .clinic_list .header_mini{
+            position: relative;
+        }
+.popup_search{
+    position: absolute;
+    top:-100%;
+    width: 100%;   
+    z-index: 35; 
+}
+    .menu, .menu_footer{
+        z-index: 200;
+        float: left;
+        width: 20%;
+        height: 100%;
+        background: @color_blue !important;
+        position: relative;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+            a:before {
+                content: "";
+         
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+    }
+/// *******************************************DOCTOR_SINGLE************************************
+.doctor_single{
+    .reviews_clinic_wrapper {
+        position: static!important;
+        display: block !important;
+        right: -103%;
+        top: 0;
+        width: 102%;
+        height: auto;
+        z-index: 10;
+        float: left;
+        margin: 0 0 1rem;
+    }
+    .column_rate_reviews{
+        position: relative;
+    }
+    .similar_doctors_wrapper .reviews_box_wrap{
+        position: absolute;
+        right: -1.3rem !important;
+        top: 5rem !important;
+    }
+  .doctor_wrapper{
+      padding: 1rem 0 1rem;
+  }
+    .content{
+        padding: 0 0 70px;
+    }
+    .doctor_address_map{
+        padding: .5rem 1% .5rem 1%;
+    }
+}
+.experience{
+    display: inline-block;
+    .font(1.7rem, 2rem);
+    margin: 0 2rem 0 0;
+}
+//****************************************** CLINIC_LIST **********************
+.clinic_snippet_description{display: block;text-decoration: none; padding: 2rem 0  0;
+    .shedule_container{
+        margin-bottom: 0;
+    }
+}
+.footer{
+    .doctor_list{
+        .footer_three .clinic_list;
+            &:before{
+                content: "";
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat -152px 0;
+                width: 42px;
+                height: 49px;
+                margin: -25px 0 0 -21px;
+            }
+    }
+}
+.clinic_list{
+    .content{
+        padding: 0 0 100px;
+    }
+}
+.clinic_items_wrapper{
+    .doctor_items_wrapper;
+    .clinic_item{
+        .doctor_items_wrapper .doctor_item;
+        border-bottom: 2px solid #d1dce8;
+        background: #fff;
+            &:nth-child(odd){
+                background: #eff5fb;
+            }
+        .clinic_wrapper{
+            .doctor_items_wrapper .doctor_item .doctor_wrapper;
+            .right{
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .order_btn{
+            width: 100%;
+        }
+        .map{
+            height: 290px;
+            margin: 2rem 0 -1rem;
+            overflow: hidden;
+            display: none;
+            clear: both;
+        }
+        .name{
+            width: 80%;
+            font-size: 2rem;
+        }
+    }
+    .doctor_address_map{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+		margin: 0 0 1rem !important;
+		width: 100% !important;
+            p{
+                padding: 0;
+            }
+        .beside_subway_wrapper{
+            &:before{
+                
+            }
+        }
+    }
+    .column_btn_doctor{
+        padding: 0;
+    }
+}
+// ********************** BLOG_SINGLE *******************
+.blog_single{
+    .blog_content {
+        padding: 7rem 1% 9rem!important;
+    }
+}
+.blogs_items_wrapper{
+    li{
+        padding: 0 !important;
+    }
+}
+.wrapper_link_blog{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1%;
+}
+.fixed_top_container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    background: #fff;
+        .column_btn_doctor{
+            margin: 0 !important;
+        }
+
+}
+.footer_two{
+    z-index: 40;
+    border-top: 1px solid #d4d4d4;
+    .search_specialist{
+       .menu_wrapper_bottom .all_doctors;
+        background: #fff;
+        width: 80%;
+            span{
+                color: #363636;
+                &:before{
+                        display: none !important;
+                }
+            }
+    }
+    .menu_footer{
+        float: left;
+        width: 20%;
+        height: 100%;
+        background: #343434;
+        position: relative;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+         a:before {
+            content: "";
+//            background: url(../img/sprite.png) no-repeat -42px -28px;
+//            width: 44px;
+//            height: 17px;
+//            margin: -9px 0 0 -21px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            }
+    }
+}
+.blog_top_menu_wrapper{
+    background: #dae2ea;
+    position: fixed;
+    width: 100%;
+    .title{
+        display: block;
+        color: @color_gray2;
+        .font(2.4rem, 6rem);
+    }
+    height: 6rem;
+    overflow: hidden;
+    .left{
+        float: left;
+        width: 79.95%;
+        height: 100%;
+        padding: 0 0 0 1rem;
+        background: #eff5fb;
+        border-bottom: 4px solid #dae2ea;
+    }
+    .right_menu{
+        background: #eff5fb;
+        float: right;
+        width: 19.95%;
+        height: 100%;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 4px solid #dae2ea;
+            &:before{
+                content: "";
+                background: url('../img/sprite.png') no-repeat -156px -210px;
+                width: 44px;
+                height: 17px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -8px 0 0 -22px;
+            }
+    }
+    .right_menu.active{
+        background: #fff;
+        border-bottom-color: #fff;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat -52px -205px;
+                width: 42px;
+                height: 42px;
+                margin: -21px 0 0 -21px;
+            }
+    }
+    .full_w{
+        width: 102%;
+        padding: 0 0 0 2%;
+    }
+}
+.blog_content{
+    .title{
+        background: #eff5fb;
+        border-bottom: 4px solid #dae2ea;
+        margin: -1rem 0 1.5rem -1% !important;
+        width: 102%;
+        padding: 1rem; 
+    }
+    padding: 5rem 1% 5.4rem !important;
+        .title{
+            display: block;
+            .font(2rem, 2.5rem); 
+            color: @color_gray2;
+            margin: 0 0 1.5rem;
+        }
+        cite{
+            padding: 1rem 0 1rem 2rem;
+            color: #606060;
+            font-style: italic;
+            position: relative;
+            .font(1.7rem, 2rem);
+            margin: 0 0 1rem;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -1rem;
+                    top: 0;
+                    height: 100%;
+                    width: 1.250rem;
+                    background: @color_green;
+                }
+        }
+    h3{
+        .font(2em, 2.5rem);
+        color: #313131;
+        margin: 0 0 1rem;
+    }
+    h2{
+        .font(2em, 2.5rem);
+        color: #313131;
+        margin: 0 0 1rem;
+    }
+    p{
+        margin: 0 0 1.2rem;
+        .font(1.7rem, 2rem);
+        color: #313131;
+    }
+    blockquote{ 
+		.full_w;
+        background: @color_green;
+        font-weight: bold;
+        .font(2rem, 2.2rem);
+        color: #fff;
+        display: block;
+        position: relative;
+        padding: 2rem 7rem 2rem 7rem;
+        margin: 0 0 1.5rem;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 2.3rem;
+                top: 2.3rem;
+                background: url('../img/quote.png') no-repeat;
+                width: 51px;
+                height: 39px;
+            }
+    }
+    a{
+        color: #de5151;
+    }
+    ul, ol{
+        margin: 0 0 0 3rem;
+        .font(1.7rem, 2rem);
+        li{
+            position: relative;
+                &:before{
+                  
+                }
+        }
+    }
+}
+.menu_search_specialist_wrapper{
+    left: 100%;
+    padding: 9.6rem 0 0 0;
+    z-index: 1;
+    .count{
+        float: right;
+        width: 20%;
+        text-align: center;
+        padding: 1.5rem 0;
+        border-left: 1px solid #D7D7D7;
+    }
+    li.active{
+        a{
+            font-weight: bold;
+            background: @color_content;
+            color: @color_blue;
+        }
+        .count{
+            font-weight: bold;
+            color: @color_blue;
+            background: @color_content;
+        }
+    }
+    li a{
+        float: left;
+        width: 80%;
+    } 
+}
+/// Подвал_блога
+.blog_footer{
+    border-top: 1px solid #d4d4d4;
+    .theme_blog_wrap{
+        cursor: pointer;
+        background: #fff;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                span{
+                    .font(2.125rem, 7.5rem);
+                    position: relative;
+                    padding: 0 0 0 4.5rem;
+                    color: #363636;
+                        &:before{
+                            content: "";
+                            background: url(../img/arrow_left.png) no-repeat!important;
+                            width: 33px;
+                            height: 21px;
+                            position: absolute;
+                            left: 0.5rem!important;
+                            top: 2px!important;
+                        }
+                }
+            }
+            a.active{
+                span{
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 21.5rem !important;
+                        top: 2px !important;
+                        background: url(../img/arrow_right.png) no-repeat !important;
+                        width: 33px;
+                        height: 21px;
+                    }
+                }
+            }
+    } 
+}
+
+// ********************* CLINIC - SINGLE**************************
+.footer{
+   .all_doctor{
+        .menu_wrapper_bottom .all_specialist;
+    } 
+}
+.clinic_single{
+    .top_clinic_single{padding: 0 0 0 1%;}
+    .clinic_items_wrapper .doctor_address_map{margin: 0 !important;}
+    .clinic_items_wrapper .doctor_address_map p {
+        padding: 0 0 0 2rem;
+    }
+    .address_doctor{
+        padding: 0 0 0 2rem !important;
+        position: relative;
+            &:before{
+                content: "";
+                width: 42px;
+                height: 64px;
+                background: url(../img/nav_ico2.png) no-repeat;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-size: 27%;
+                
+            }
+    }
+    .clinic_items_wrapper .clinic_item:nth-child(odd){background: #fff;}
+    
+    .clinic_items_wrapper .column_btn_doctor{text-align: center;}
+    .content{
+        padding: 1rem 0 32px;
+    }
+    .clinic_items_wrapper .clinic_item .clinic_wrapper .left{
+        width: 15%;
+    }
+    .clinic_items_wrapper .clinic_item .clinic_wrapper .right{
+        width: 84%;
+        .column_doctor{
+            width: 82%;
+        }
+    }
+    .clinic_items_wrapper .doctor_address_map{
+        padding: 1rem 1rem 1rem 0;
+        border-bottom: 1px solid #d6e3ec;
+        border-top: 1px solid #d6e3ec;
+    }
+    .column_rate_reviews{
+        width: 12%;
+        float: right;
+    }
+    .shedule_container{
+        margin: 0;
+    }
+    .column_btn_doctor{
+        margin: 1rem 0 1rem 1rem !important;
+    }
+    .doctor_address_map{
+           position: relative;             
+            &:before{
+                content: "";
+                position: absolute;
+                right: 1rem;
+                top: 20px;
+                background: url('../img/sprite.png') no-repeat -144px -248px;
+                width: 24px;
+                height: 16px;
+                margin: -8px 0 0;
+                }
+    }
+    .doctor_address_map.active{
+        position: relative;
+                    &:before{
+                content: "";
+                position: absolute;
+                right: 1rem;
+                top: 20px;
+                background: url('../img/sprite.png') no-repeat -144px -228px;
+                width: 25px;
+                height: 16px;
+                margin: -8px 0 0;
+            }
+    }
+    .similar_clinic_wrapper{
+        .doctor_address_map:before{
+            display: none;
+        }
+    }
+}
+.sames_clinic_wrapper{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 2rem 1%;
+    text-decoration: none;
+}
+.similar_clinic_wrapper{
+    padding: 2rem 0; 
+    .doctor_name{
+        margin: 0 0 1rem;
+    }
+        .description{
+            width: 100% !important;
+        }
+    .similar_doctors_item{
+        margin: 0;
+        position: relative;
+    }
+        .similar_doctors_items{
+            &:nth-child(odd){
+                background: @color_content;
+            }
+        .right{
+            width: 75% !important;
+            .description{
+                margin: 0 !important;  
+            }
+        }
+    }
+    .box_review_rate{
+        float: right;
+        width: 25%;
+            .reviews_box{
+                float: right;
+                margin: 0 1rem 0 0;
+                    a{
+                        padding: 2.35rem 0;
+                    }
+            }
+            .rate_box{
+                float: right;
+            }
+    }
+    .doctor_address_map{
+        margin-bottom: 0 !important;
+        border: none !important;
+        padding-bottom: 0 !important;
+            p{
+                margin: 0;
+                line-height: 2rem;
+            }
+    }
+    .address_doctor{
+        color: #333;
+            span{
+                color: @color_blue;
+            }
+    } 
+}
+.top_clinic_single{
+	
+}
+.desc_middle{
+    width: 80%;
+    .font(1.5rem, 1.8rem);
+    color: #363636;
+    margin: 0 0 1rem;
+}
+// ********************* NETWORK - LIST**************************
+.network_list{
+    .clinic_items_wrapper .clinic_item .clinic_wrapper .right{
+        width: 84%;
+    }
+    .rate_box{
+        border-color: @color_red;
+            .rate_static{
+                background: @color_red;
+            }
+    }
+        .content{
+            padding: 0 0 74px;
+        }
+}
+.network_panel{
+  &.active{
+    &:before{
+        background-position: -144px -227px;
+    }
+}
+.full_w;
+    padding: 0 1% 0 8%;
+    height: 5rem;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+    cursor: pointer;
+    position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            right: 2%;
+            top: 50%;
+            margin: -8px 0 0 0;
+            background: url('../img/sprite.png') no-repeat -144px -248px;
+            width: 24px;
+            height: 16px;
+        }
+        p{
+            position: relative;
+            .font(2.2rem, 5rem);
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -7%;
+                    top: 50%;
+                    margin: -17px 0 0 0;
+                    background: url('../img/sprite.png') no-repeat -168px -232px;
+                    width: 32px;
+                    height: 32px;
+                }
+        }
+}
+.network_list_wrapper{
+    display: none;
+    .similar_clinic_wrapper{
+        margin: 0 0 2rem;
+        padding: 0;
+    }
+    .similar_clinic_wrapper .similar_doctors_items .right{
+        float: left;
+        width: 85%!important;
+    }
+    .similar_clinic_wrapper .box_review_rate{
+        width: 15%;
+            .reviews_box{
+                margin: 0;
+            }
+    } 
+    .column_rate_reviews{
+        width: 15%;
+        float: right;
+    }
+    .address_doctor{
+        color: #333;
+        .font(2rem, 2.5rem)
+    }
+}
+// ********************* NETWORK - SINGLE**************************
+.network_single, .network_rate{
+    .rate_box{
+        border-color: @color_red;
+            .rate_static{
+                background: @color_red;
+            }
+    }
+    .doctor_address_map{
+        padding: 0 0 1rem !important;
+    }
+    .network_accordion_wrapper{
+        .btn_order{
+            background: @color_green;
+            width: 100%;
+            height: 10rem;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    background: url('../img/sprite.png') no-repeat -211px -145px;
+                    width: 49px;
+                    height: 50px;
+                    margin: -25px 0 0 -25px;
+                }
+        }
+    }
+    .network_list_wrapper .similar_clinic_wrapper .box_review_rate{
+        width: 15%;
+    }
+    .network_list_wrapper .similar_clinic_wrapper .similar_doctors_items .right{
+        width: 85% !important;
+    }
+    .content{
+        padding: 0 0 53px;
+        position: relative;
+    }
+}
+.doctor_items_wrapper_menu {
+//    position: absolute;
+//    width: 100%;
+//    left: -100%;
+//    top: 0;
+//    z-index: 30; 
+//    padding: 0 0 7.5rem;
+    .doctor_item{
+        border-bottom: 3px solid #dce7ee;
+        background: #fff;
+        &:last-of-type{
+            margin: 0 0 2rem;
+        }
+        &:nth-child(even){
+            background: @color_content;
+        }
+        .doctor_wrapper{
+            margin: 0;
+        }
+    } 
+}
+// ********************* handbook **************************
+.handbook_patient_content ul li{background: #fff;}
+.handbook_patient_content{
+    padding: 10rem 1% 14.5rem;
+    .article{
+        padding: 0 0 1rem;
+        border-bottom: 1px solid #e9ebee;
+    }
+    h1{
+        .font(2.6rem, 3rem);
+        margin: 0 0 1.5rem;
+    }
+    .article_list_wrapper{
+
+        .title{
+            padding: 0 0 0 5rem;
+            position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: -8px;
+                    background: url('../img/sprite.png') no-repeat -213px 0;
+                    width: 37px;
+                    height: 37px;
+                }
+        }
+    }
+    h2{
+        .font(2rem, 2.5rem);
+        a{
+            color: @color_blue;
+            text-decoration: none;
+            border-bottom: 1px solid #c9d5e3;
+                &:hover{
+                    border-bottom-color: transparent;
+                }
+        }
+    }
+    ul{
+        .full_w;
+       
+        li{
+            padding: 1rem 1%;
+            border-bottom: 1px solid #dee2e4;
+                &:nth-child(even){
+                    background: @color_content;;
+                }
+                &:last-of-type{
+                    border-bottom-color: transparent;
+                }
+        }
+        p{
+            .font(1.7rem, 2rem);
+             color: #313131;
+        }
+    }
+    .similar_doctors_wrapper{
+        border-top: 1px solid #DAE2EA;
+        background: @color_content;
+            .title{
+                padding: 0 1%;
+            }
+    }
+    .column_btn_doctor{
+//        .clinic_items_wrapper .column_btn_doctor .order_btn;
+        width: 98%;
+        margin: 2rem 0 0 1%;
+    }
+}
+.list_items_disease_wrapper,
+.list_items_service_wrapper{
+    margin: 0 0 2rem;
+    .title{
+        display: block;
+        position: relative;
+        padding: 0 0 0 5rem;
+    }
+    ul{
+        li{
+            padding: 1rem 1% 1rem 6rem;
+            background: #fff !important;
+            .font(1.7rem, 2rem);
+            a{
+                color: @color_blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.list_items_disease_wrapper{
+    .title{
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            background: url('../img/sprite.png') no-repeat -213px -95px;
+            width: 37px;
+            height: 37px;
+            top: 50%;
+            margin: -18px 0 0; 
+        }
+    }
+}
+.list_items_service_wrapper{
+    margin: 0 0 0;
+    .title{
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            background: url('../img/sprite.png') no-repeat -213px -50px;
+            width: 37px;
+            height: 37px;
+            top: 50%;
+            margin: -18px 0 0;
+        }
+    }
+}
+// ********************* services_single **************************
+.services_single{
+    .font(1.7rem, 2rem);
+    ul{
+        .font(1.7rem, 2rem);
+        margin: 0 0 2rem 3rem;
+            li{
+                list-style-type: disc;
+                margin: 0 0 0.5rem;
+                  
+            }
+    }
+    h2{
+        .font(2rem, 2.5rem);
+        margin: 0 0 1.5rem;
+    }
+        blockquote{
+            padding: 1rem 0 1rem 2rem;
+            color: #606060;
+            font-style: italic;
+            position: relative;
+            .font(1.7rem, 2rem);
+            margin: 0 0 1rem;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -1rem;
+                    top: 0;
+                    height: 100%;
+                    width: 1.250rem;
+                    background: @color_green;
+                }
+        }
+}
+.services_single_content{
+    padding: 12rem 1% 14.5rem;
+        .article{
+            .handbook_patient_content .article;
+            h1{
+                .font(2.6rem, 3rem);
+                margin: 0 0 1.5rem;
+                color: #313131;
+            }
+            p{
+                margin: 0 0 1.2rem;
+                .font(1.7rem, 2rem);
+                color: #313131;
+            }
+        }
+}
+.service_item_wrap{
+    text-decoration: none;
+}
+.doctors_clinic{
+    .footer .all_doctor;
+}          
+#clinic-spec{
+        position: fixed;
+        left: 11.3%;
+        top: 10%;
+        max-height: 70% !important;
+        width: 80%;
+        z-index: 60;
+        display: none;
+        background: #fff;
+        padding: 0 0 7rem;
+        border-radius: 5px;
+        .btn_wrap_spec{
+            position: absolute;
+            z-index: 8;
+            cursor: pointer;
+            .font(2rem, 5rem);
+            font-weight: bold;
+            color: #fff;  
+            background: @color_green;
+            text-align: center;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+            bottom: 0;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+        }
+}
+.items_specialist_list_check{
+    overflow: auto;
+    height: 103.7%;
+    border-radius: 5px;
+//    position: absolute;
+//    z-index: 30;
+//    left: -100%;
+//    top: 0;
+//    width: 80%;
+
+        li{
+            background: @color_blue;
+            width: 100%;
+            border-bottom: 1px solid #6391b4;
+            position: relative;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                    .font(2rem, 2.5rem);
+                    padding: 1rem 1% 1rem 12%;
+                    position: relative;
+                }
+                input[type="checkbox"]{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+        }
+        li.active{
+            a{
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 2%;
+                    top: 50%;
+                    background: url('../img/check_ico.png') no-repeat;
+                    width: 64px;
+                    height: 64px;
+                    margin: -8px 0 0;
+                    background-size: 40% !important;
+                }
+            }
+        }
+}
+.similar_clinic_wrapper, 
+.similar_doctors_wrapper{
+    .beside_subway_wrapper:before{
+        display: none;
+    }
+}
+// Pagination
+.paginator{
+    margin-top: 1rem !important;
+    text-align: center;
+    font-size: 0;
+    .hidden{display: none !important;}
+    display: table;
+    width: 100%;
+    li{
+        background: none !important;
+        display: table-cell;
+        font-size: 2rem;
+        min-width: 2rem;
+        border: none !important;
+        vertical-align: top;
+        margin: 0 0 0 -1px;
+        padding: 0 !important;
+        border-left: 1px solid #d3e2f2 !important;
+            &:first-child{
+                border: none !important;
+            }
+            a{
+               
+                color: @color_blue;
+                font-weight: bold;
+                text-decoration: none;
+                display: block;
+                padding:  15% !important;
+                line-height: 3.4rem !important;
+            }
+    }
+    .selected {
+        background: @color_blue !important;
+        a{
+            color: #fff;
+        }
+    }
+}
+.static_item{
+    .menu_specialist_wrapper .text_wrapper, .menu_subway_wrapper .text_wrapper{position: static;}
+    .menu_specialist_wrapper{
+        position: relative;
+        left: 0;
+        display: block;
+        margin: -3.19rem 0 0 -1%;
+        width: 102%;
+            .items-modal-list{
+                margin-bottom: 0 !important;
+                padding: 0 !important;
+                min-height: 50px;
+                background: #fff;
+                    li{
+                        padding: 0 1%;
+                        &:nth-child(even){
+                            background: #fff;
+                        }
+                    }
+            }
+    }
+}
+.search_specialist_full{
+//    background: #343434 !important;
+//    border-color: #343434 !important;
+}
+//КАРТА
+.yandex-map-list{
+    width: 100% !important;
+    height: 40rem !important;
+}
+.ymaps-logotype-div,
+.ymaps-copyrights-legend{
+    display: none !important;
+}
+
+.back_all_subway{
+    width: 80% !important;
+    background: #fff !important;
+        span{
+            color: #363636 !important;
+        }
+}
+.clinic_single{
+    .column_btn_doctor{
+        margin: 7rem 0 0 1rem;
+    }
+}
+.clinic_single.network_single{
+    .column_btn_doctor{
+        margin: 1rem 0 0 0;
+    }
+}
+.network_single .content, .network_rate .content {
+    padding: 0 0 60px !important;
+    position: relative;
+        .info_clinic{
+            padding: 0 0 2rem;
+        }
+}
+.clinic_items_wrapper .clinic_item{
+    &:last-of-type{
+        margin: 0 0 7rem;
+        border-bottom: none;
+    }
+}
+.blog_content.handbook_patient_content{
+    padding: 5rem 1% 10.5rem !important;
+}
+.fixed_category_list{
+    display: block !important;
+    position: static !important;
+    padding: 0;
+    margin: -2.2rem 0 0;
+    .items-modal-list{
+        padding: 0;
+    }
+}
+ .left_full{
+     width: 100% !important;
+ }
+.serv_single{
+    .services_single_content{
+        padding: 5rem 1% 7.5rem;
+    }
+    .fixed_category_list{
+        display: none !important;
+    }
+}
+.services_list{
+    .article_list_wrapper + .fixed_category_list{display: none !important;}
+    .article_list_wrapper{
+       ul{
+            margin-left: -1%!important;
+            width: 102%;
+       }
+        li{
+            padding: 1rem 1%;
+            border-bottom: 1px solid #dee2e4;
+            &:nth-child(even) {
+                background: #eff5fb;
+            }
+            h2{
+                font-size: 2em;
+                line-height: 2.5rem;
+                color: #313131;
+                margin: 0 0 0.5rem;
+                    a{
+                        color: #6384a8;
+                        text-decoration: none;
+                        border-bottom: 1px solid #c9d5e3;
+                    }
+            }
+            p{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                color: #313131;
+            }
+        }
+    }
+}
+//////// ПЕРЕБРАТЬ
+.clinic_single .clinic_items_wrapper .clinic_item .clinic_wrapper .right .column_doctor{
+    width: 100% !important;
+}
+.clinic_single .clinic_items_wrapper .clinic_item .clinic_wrapper .right {
+width: 69%;
+}
+.column_btn_doctor{
+    text-align: center;
+}
+.similar_doctors_wrapper {
+    .rate_box{
+        right: 3% !important;
+        top: 1.3rem!important;
+    }
+    .reviews_box_wrap{
+        top: 2rem !important
+    }
+}
+.clinic_menu{
+    position: relative;
+    a{
+        padding: 1.563rem 2.813rem 1.563rem 5.813rem !important ;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 2rem;
+            top: 8px;
+            background: url(../img/clinic_wwhite.png) no-repeat;
+            width: 64px;
+            height: 64px;
+            background-size: 40%;
+        }
+    }
+}
+.doctor_menu{
+    position: relative;
+    a{
+        padding: 1.563rem 2.813rem 1.563rem 5.813rem !important ;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 2rem;
+            top: 8px;
+            background: url(../img/doc_white.png) no-repeat;
+            width: 64px;
+            height: 34px;
+            background-size: 40%;
+        }
+    }
+}
+.gallery_container{
+    margin: 0 0 1rem;
+}
+/////// Всплываха
+.fixed_top{
+    padding: 0 1%;
+    .column_btn_doctor{
+         float: left;
+        width: 79%;
+        clear: none;
+        .order_btn{max-width: 100% !important;}
+    }
+}
+    .call_btn{
+        margin: 1rem 0 1rem!important;
+        color: #fff;
+        font-size: 2rem;
+        background: #aecb66;
+        width: 20%;
+        height: 5.3rem;
+        position: fixed;
+        right: 1rem;
+        bottom: 0;
+        border-radius: 5px;
+        float: right;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                z-index: 9;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: url(../img/phone_ico.png) no-repeat;
+                width: 64px;
+                height: 64px;
+                margin: -18px 0 0 -18px;
+                background-size: 60%;
+            }
+    }
+/////////////////////////////////////   ТАБЫ Клинники
+.clinic_tabs{
+    border-top: 1px solid #d6e3ec;
+    border-bottom: 1px solid #d6e3ec;
+//    margin: 0 0 0 -1%;
+//    width: 102%;
+    span{
+        .font(1.8rem, 5rem);
+        color: @color_blue;
+        width: 50%;
+        text-align: center;
+        height: 5rem;
+        cursor: pointer;
+    }
+    .active{
+        background: @color_blue;
+        color: #fff;
+    }
+    .tab_info{
+        float: left;
+        border-right: 1px solid #d6e3ec;
+    }
+    .tab_review{
+        float: right;
+    }
+}
+.tab_content{
+    position: relative;
+    margin: -1px 0 0;
+}
+.info_clinic{
+    position: absolute !important;
+    display: none;
+    left: -100%;
+    top: 0;
+    background: @color_blue;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    float: left;
+    padding: 1rem;
+}
+.reviews_clinic_wrapper{
+    position: absolute !important;
+    display: none;
+    right: -103%;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: 10;
+    float: left;
+}
+.info_clinnic_inner{
+    background: #fff;
+    border-radius: 5px;
+    padding: 1.5rem 2%;
+}
+////////////////////////////////// select specialist
+.select_specialist{
+    .font(2rem, 2.5rem);
+    float: right;
+    color: @color_blue;
+    text-decoration: none;
+    border-bottom: 1px dashed @color_blue;
+}
+.title_box {
+    padding: 2rem 1rem;
+    .font(2rem, 2.5rem);
+        .count{
+            font-size: 1.5rem;
+            top: -10px;
+            position: relative;
+        }
+}
+.all_clinic{
+    .close_tab{
+        display: none;
+            span{
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+               &:before{
+                    position: absolute;
+                    width: 64px;
+                    height: 64px;
+                    background: url(../img/close_ico.png) no-repeat;
+                    left: 50% !important;
+                    top: 50% !important;
+                    margin: -20px 0 0 1.8rem !important;
+                    background-size: 63% !important;
+               }
+            }
+    }
+    .doctors_clinic;
+    background: #fff;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        span{
+            color: #363636;
+                &:before{
+                    width: 64px;
+                    height: 64px;
+                    position: absolute;
+                    background: url(../img/caduceus.png) no-repeat;
+                    left: 1rem;
+                    top: -2px;
+                    background-size: 40% !important;
+                }
+        }
+}
+.similar_clinic_wrapper.similar_doctors_wrapper{
+    .address_doctor:before{display: none !important;}
+    .doctor_address_map p {padding: 0 !important;}
+    .doctor_name {
+        margin: 0 !important;
+    }
+}
+.count-doctor{
+    display: none;
+}
+.asc, .desc{
+    color: #e81818!important;
+}
+.more_wrap{
+    text-align: center;
+}
+.content_items{
+    li{
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 0 1rem 5rem !important;
+        list-style-type: disc !important;
+    }
+}
+.rigth_network{
+    width: 83% !important;
+    float: right !important;
+}
+.network_list{
+    .header_mini, .content{
+        position: relative;
+    }
+}
+.column_doctor_network{
+    width: 100% !important;
+}
+.doctor_name_network{
+    .font(2rem, 2.5rem);
+    color: #363636;
+}
+.network_clinic_snippet_description{
+    padding: 2rem 1% !important;
+}
+.network_single{
+    min-height: 0 !important;
+}
+.clinic_single.network_single .content{
+    padding: 0 !important;
+        .clinic_item{
+            margin: 0;
+        }
+}
+.net_sing .doctor_items_wrapper{
+    padding: 0 0 5rem !important;
+}
+.network_list .left .inner{
+    background: #fff;
+    //padding: 0.35rem;
+    border: 1px solid #ccc;
+    width: 20rem;
+    height: 5rem;
+    display: table-cell;
+    vertical-align: middle;
+        img{
+            display: block;
+        }
+}
+.doctor_item .name,
+.doctor_item .second_name{
+    display: block !important;
+}

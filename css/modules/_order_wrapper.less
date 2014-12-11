@@ -1,0 +1,180 @@
+.order_wrapper{
+    position: fixed;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 250%;
+    background: @color_blue;
+    text-align: center;
+    z-index: 100;
+        .top{
+            background: #859ebb;
+            height: 8rem;
+            position: relative;
+        }
+        .close{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    background: url('../img/sprite.png') no-repeat 0 -181px;
+                    width: 44px;
+                    height: 44px;
+                    margin: -22px 0 0 -22px;
+                }
+        }
+        .title_box, .title_box_home{
+            border-bottom: 1px solid #9aafc7;
+            padding: 2.5rem 0;
+            strong{
+                display: block;
+                color: #fff;
+                font-weight: bold;
+                .font(3rem, 3rem);
+            }
+            span{
+                display: block;
+                color: #fff;
+                .font(1.7rem, 2rem);
+            }
+        }
+    .title_box_home{
+        display: none;
+    }
+        .middle{
+            
+        }
+        .doctor_order_name{
+            color: #fff;
+            font-weight: bold;
+            .font(2rem, 2.3rem);
+        }
+        .clinic_order_name{
+            color: #fff;
+            .font(1.7rem, 2rem);
+            margin: 0 0 1rem;
+        }
+        .form_box{
+            padding: 2.3rem 0 2rem;
+            border-bottom: 1px solid #9aafc7;
+        }
+        form{
+            padding: 1.5rem 2%;
+            input[type="text"],
+            input[type="number"]{
+                border: none;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                .font(2rem, 2.5rem);
+                color: @color_blue;
+                position: relative;
+                z-index: 2;
+                padding: 0 0 0 8rem;
+            }
+            input[type="submit"]{
+                border: none;
+                background: none;
+                color: #fff;
+                .font(2rem, 6rem);
+                width: 100%;
+            }
+            .row{
+                background: #fff;
+                height: 6rem;
+                margin: 0 0 1.5rem;
+                border-radius: 5px;
+            }
+            .name_text{
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    max-width: 10rem;
+                    min-width: 7rem;
+                    height: 100%;
+                    background: @color_header;
+                    border-radius: 5px 0 0 5px;
+                    z-index: 3;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    background: url('../img/sprite.png') no-repeat -211px -219px;
+                    width: 47px;
+                    height: 45px;
+                    margin: -22px 0 0 1rem;
+                    z-index: 3;
+                }
+            }
+            .phone_text{
+                position: relative;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        max-width: 10rem;
+                        min-width: 7rem;
+                        height: 100%;
+                        background: @color_header;
+                        border-radius: 5px 0 0 5px;
+                        z-index: 3;
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        background: url('../img/sprite.png') no-repeat -214px -271px;
+                        width: 46px;
+                        height: 29px;
+                        margin: -15px 0 0 1rem;
+                        z-index: 3;
+                    }
+            }
+            .btn_send{
+                background: @color_green;
+                margin: 0;
+                    &:hover{
+                        background: #94aa5f;
+                    }
+            }
+        }
+        .bottom{
+            padding: 1.3rem 0;
+        }
+        .description{
+            color: #9db0c5;
+            .font(1.5rem, 1.8rem);
+            margin: 0 0 1rem;
+        }
+        .copy_order{
+            color: #9db0c5;
+            .font(1.5rem, 1.8rem);
+        }
+} 
+.error{
+    background: #e77263;
+    color: #fff;
+    text-align: center;
+    .font(1.7rem, 2rem);
+    display: none;
+    padding: 2px 0;
+margin: -3px 0 0 0;
+    position: relative;
+    z-index: 3;
+}
+.row.btn_send {
+margin: 3rem 0 0 0 !important;
+}

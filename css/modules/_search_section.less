@@ -1,0 +1,83 @@
+.search_section{
+            .title{
+                font-size: 1.625rem;
+                color: #fff;
+                margin: 0 0 1rem;
+            }
+            input[type="text"]{
+                background: #fff !important;
+                height: 6rem;
+                font-size: 1.625rem;
+                padding: 0 0 0 7rem;
+                cursor: pointer;
+                border: none;
+                width: 100%;
+                border-radius: 5px;
+            }
+            input[type="submit"]{
+                background: none;
+                border: none;
+                background: @color_green;
+                color: #fff;
+                height: 6rem;
+                border-radius: 5px;
+                width: 100%;
+				.font(2rem, 6rem)
+            }
+            .fake_select{
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+                border-radius: 5px;
+                margin: 0 0 1rem;
+                    &:before{
+                        content: "";
+                        background: url('../img/sprite.png') no-repeat 0 -39px;
+                        width: 25px;
+                        height: 16px;
+                        margin: -8px 0 0 -12px;
+                        position: absolute;
+                        right: 3%;
+                        top: 50%;
+                    }
+                    .icon{
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 6rem;
+                        height: 100%;
+                        background: @color_header;
+                        border-radius: 5px 0 0 5px;
+                    }
+            }
+            .select_category{
+                .icon{
+                    &:after{
+                        content: "";
+                        background: url('../img/sprite.png') no-repeat -42px 0;
+                        width: 44px;
+                        height: 17px;
+                        margin: -8px 0 0 -22px;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                    }
+                }
+            }
+            .select_subway{
+                .icon{
+                    &:after{
+                        content: "";
+                        background: url('../img/sprite.png') no-repeat -92px 0;
+                        width: 42px;
+                        height: 42px;
+                        margin: -21px 0 0 -21px;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                    }
+
+                }
+            }
+        }                    

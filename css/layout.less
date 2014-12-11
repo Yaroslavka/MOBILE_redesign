@@ -1,0 +1,328 @@
+.header{
+	text-align: center;
+	padding: 0.6rem 0;
+	background: @color_header; 
+}
+.header_mini{
+    height: 5rem;
+    .logo_box{
+        float: left;
+        width: 40%;
+        background: @color_blue !important;
+        height: 100%;
+        text-align: center;
+		.font(2rem,5rem); 
+            a{
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                
+            }
+    }
+    .phone_box{
+        float: left;
+        width: 40%;
+        background: @color_green;
+        height: 100%;
+        color: #fff;
+		.font(2rem,5rem);
+        text-align: center;
+    }
+}
+.page { 
+    height: auto !important;
+    min-height: 100% !important;
+    min-width: 320px;
+    //max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.content {
+    height: 1%;
+    padding: 0 0 170px;
+    width: 100%;
+}
+
+.footer{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 7.5rem;
+    left: 0;
+    bottom: 0;
+    min-width: 320px;
+    overflow: hidden;
+    z-index: 70 !important;
+        .back, .back_two{
+           display: block;
+            width: 100%;
+            height: 100%;
+            &:before{
+                background: url('../img/close_ico.png') no-repeat !important;
+                width: 64px !important;
+                height: 64px !important;
+                margin: -32px 0 0 -32px !important;
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+        }
+    a{
+        text-decoration: none;
+    }
+  .menu_footer.main_menu_footer{
+    background: #fff !important;
+  }
+}
+// BODY
+.body_main{  
+    .menu_nav_wrapper{
+        left: -100%;
+        right: auto;
+    }
+    .menu_specialist_wrapper,
+    .menu_subway_wrapper{
+        right: -100%; 
+        left: auto;
+    }
+    .back_all_specialist{
+        float: right !important;
+    } 
+}
+    // footer главная
+    .main + .footer .menu_wrapper_bottom .all_specialist{
+        float: right;
+    }
+
+
+/// WHITE FOOTER STYLE
+    .menu_footer{
+        background: #fff !important;
+            a{
+                &:before{
+                    content: "";
+                    background: url('../img/menu.png') no-repeat;
+                    width: 44px !important;
+                    height: 17px !important;
+                    margin: -9px 0 0 -22px !important;
+                    position: absolute;
+                    left: 50%; 
+                    top: 50%;
+                }
+            }
+    }
+    .menu_footer.active{
+        background: #343434 !important;
+            a:before{
+                content: "";
+                background: url(../img/menu_white.png) no-repeat;
+                width: 44px;
+                height: 17px;
+                margin: -9px 0 0 -21px;
+            }
+    }
+
+
+
+
+.footer{
+
+}
+    .main + .footer{
+        border-top: 1px solid #d4d4d4;
+        .all_specialist{
+            background: #fff !important;
+                span{
+                    color: #363636 !important;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            left: 21.5rem;
+                            top: 2px;
+                            background: url('../img/arrow_right.png') no-repeat;
+                            width: 33px;
+                            height: 21px;
+                        }
+                }
+        }
+
+        .back_all_specialist{
+            background: #fff !important;
+            span{
+                color: #363636 !important;
+                &:before{
+                    content: "";
+                    background: url('../img/sprite.png') no-repeat -70px -277px;
+                    width: 33px;
+                    height: 21px;
+                    position: absolute;
+                    left: -1rem;
+                    top: 2px;
+                    
+                }
+            }
+        }
+    }
+//////////////////// doctorr_list
+.doctor_list + .footer{
+    border-top: 1px solid #d4d4d4;
+    .clinic_list{
+        display: none;
+    }
+    .all_specialist{
+        background: #fff !important;
+        width: 80% !important;
+            span{
+                color: #363636 !important;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0.5rem !important;
+                        top: 2px !important;
+                            background: url('../img/arrow_left.png') no-repeat;
+                            width: 33px !important;
+                            height: 21px !important;
+                    }
+            }
+    }
+
+        .back_all_specialist{
+            width: 80% !important;
+            background: #fff !important;
+            span{
+                color: #363636 !important;
+                &:before{
+                    content: "";
+                    background: url('../img/sprite.png') no-repeat -25px -277px;
+                    width: 33px;
+                    height: 21px;
+                    position: absolute;
+                    left: 12rem;
+                    top: 2px;
+                    
+                }
+            }
+        }
+}
+////////////////////////clinic_list
+.clinic_list+.footer,
+.network_list+.footer{
+    border-top: 1px solid #d4d4d4;
+    .doctor_list{
+        display: none;
+    }
+    .all_specialist{
+        background: #fff !important;
+        width: 80% !important;
+            span{
+                color: #363636 !important;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0.5rem !important;
+                        top: 2px !important;
+                            background: url('../img/arrow_left.png') no-repeat;
+                            width: 33px !important;
+                            height: 21px !important;
+                    }
+            }
+    }
+
+        .back_all_specialist{
+            width: 80% !important;
+            background: #fff !important;
+            span{
+                color: #363636 !important;
+                &:before{
+                    content: "";
+                    background: url('../img/sprite.png') no-repeat -25px -277px;
+                    width: 33px;
+                    height: 21px;
+                    position: absolute;
+                    left: 12rem;
+                    top: 2px;
+                    
+                }
+            }
+        }
+}
+    .footer .doc_ico.all_specialist_check span:before, .footer .back_all_specialist span:before, .footer .back_all_subway span:before {
+        content: "";
+        background: url(../img/arrow_left.png) no-repeat !important;
+        width: 33px;
+        height: 21px;
+        position: absolute;
+        left: 1rem!important;
+        top: 7px!important;
+
+        
+    }
+////////////////////////clinic_single
+.doctor_items_wrapper.doctor_items_wrapper_menu{
+    .doctor_item:nth-child(even){
+        background: #fff !important;
+    }
+}
+.clinic_single + .footer{
+    border-top: 1px solid #d4d4d4;
+   
+    .doctors_clinic{
+            width: 80% !important;
+            background: #fff !important;
+            span{
+                color: #363636 !important;
+                &:before{
+                    background-size: 60%;
+                    
+                }
+            }
+    }
+    .all_specialist_check{
+        .doctors_clinic;
+    }
+    .back_check_menu{
+        background: #fff !important;
+        width: 80% !important;
+            span{
+                color: #363636 !important;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 21.5rem;
+                        top: 2px ;
+                            background: url('../img/arrow_right.png') no-repeat;
+                            width: 33px !important;
+                            height: 21px !important;
+                    }
+            }
+    }
+}
+.items_specialist_list_check li{
+    background: #fff !important;
+    border-color: #d4d4d4 !important;
+        a{
+            color: #363636 !important;
+        }
+}
+/////////////// doctor_single
+.doctor_single + .footer{
+    border-top: 1px solid #d4d4d4;
+    .clinic_list{
+        display: none;
+    }
+    .all_doctors{
+        width: 80% !important;
+        background: #fff !important;
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+            span{
+                color: #363636 !important;
+            }
+    }
+    
+}

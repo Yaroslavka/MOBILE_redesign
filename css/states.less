@@ -1,0 +1,110 @@
+// На всю ширину
+.full_w{
+	margin-left: -@side_offset !important;
+	width: 100% + (@side_offset * 2);
+}
+// При прокрутке страница clinnic_single
+.fixed_top{
+    
+    .name{display: none;}
+    .rate_box{display: none;}
+    
+    .column_btn_doctor{
+        .doctor_items_wrapper .column_btn_doctor
+    }
+    .column_btn_doctor{padding: 0;}
+    .name{
+        .doctor_items_wrapper .doctor_item .name;
+    }
+    .doctor_category{
+        .doctor_items_wrapper .doctor_item .doctor_wrapper .right .doctor_category;
+    }
+    .column_btn_doctor{
+        margin: 1rem 0 1rem !important;
+    }
+}
+.fixed_top{
+    position: fixed;
+    z-index: 25;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    .top_clinic_single{
+        margin: 0;
+        background: @color_content;
+        border-bottom: 1px solid #d3deea;
+        padding: 1rem 1% 1rem;
+        .left{
+            display: none;
+        }
+        .column_doctor{
+            display: none;
+        }
+        .column_btn_doctor{
+            width: 100%;
+            clear: none;
+        
+            .order_btn{
+                width: 100%;
+               
+            }
+                .order_btn, .order_home_btn{
+                    padding: 2.3rem .5rem;
+                }
+        }
+        .reviews_box{
+            display: none;
+        }
+        .right{
+            float: right !important;
+            width: 12%  !important;
+                .column_rate_reviews{
+                    width: 100% !important;
+                }
+                .rate_box{
+                    width: 100% !important;
+                    margin: 1rem 0 0;
+                }
+        }
+    }
+}
+// При прокрутке страница doctor_single
+.fixed_top{
+    .top_doctor_single{
+        padding: 0 1% !important;
+    }
+    .top_doctor_single{
+        .name, .column_doctor, .column_doctor, .experience, .doctor_category, .rate_box{
+            display: none;
+        }
+  
+       .fixed_top .top_clinic_single;
+        .doctor_wrapper{
+            margin: 0 !important;
+        }
+        .right{
+            width: 100% !important;
+                .column_rate_reviews{
+                    width: 12%!important;
+                    float: right;
+                }
+                .order_btn{
+                    width: 49%;
+                }
+                .order_home_btn{
+                    width: 49%;
+                }
+        }
+        .column_doctor{
+            display: block;
+            width: 100% !important;
+            margin: 0 0 1rem;
+                .description{
+                    display: none;
+                }
+                .price{
+                    display: none;
+                }
+        }
+    }
+}

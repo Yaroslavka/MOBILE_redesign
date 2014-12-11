@@ -1,0 +1,97 @@
+.doctor_address_map{
+    margin: -1px 0 0 0;
+    padding: 1.5rem 1% 0.5rem;
+	.full_w;
+        &:nth-child(even){
+            background: @color_content;;
+        }
+    .clinic_name{
+        margin: 0 0 0.4rem 3rem;
+        span{
+            text-decoration: none;
+            color: @color_gray2;
+            .font(1.6rem, 2rem);
+            position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -3rem;
+                    background: url('../img/sprite.png') no-repeat -32px -139px;
+                    width: 23px;
+                    height: 23px;
+                    top: 0;
+                }
+        }
+    }
+    .address_doctor{
+        margin: 0 0 1rem;
+        padding: 0 0 0 3rem;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: @color_blue;
+            span{
+                //border-bottom: 1px dashed #b2c1d3;
+            }
+    }
+    .map{
+        height: 290px;
+        margin: 2rem 0 -0.5rem;
+        overflow: hidden;
+        display: none;
+        width: 102.5% !important;
+        img{
+            max-width: 100%;
+        }
+    }
+    .beside_subway_wrapper.active{
+            &:before{
+                content: "";
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat -182px -284px;
+                width: 25px;
+                height: 16px;
+                margin: -8px 0 0;
+            }
+    }
+    .beside_subway{
+        padding: 0 0 0 3rem;
+        margin: 0;
+        color: #999;
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem;
+        .color_subway{
+            font-size: 1.7rem;
+        }
+        .car{
+            background: url('../img/sprite.png') no-repeat -63px -141px;
+            width: 20px;
+            height: 10px;
+            display: inline-block;
+            opacity: .4;
+        }
+        .people{
+            background: url('../img/sprite.png') no-repeat -93px -139px;
+            width: 9px;
+            height: 15px;
+            display: inline-block;
+            opacity: .4;
+        }
+    }
+}
+.beside_subway_wrapper{
+    position: relative;
+    cursor: pointer;
+    //padding: 0 4rem 0 0;
+        &:before{
+            content: "";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            background: url('../img/sprite.png') no-repeat 0 -39px;
+            width: 25px;
+            height: 16px;
+            margin: -8px 0 0;
+        }
+}

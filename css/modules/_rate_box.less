@@ -1,0 +1,64 @@
+.rate_box{
+    width: 100%;
+    //border: 1px solid #6f8eaf;
+    margin: 0 0 0.6rem;
+    text-align: center;
+    top: 2.4rem !important;
+    right: 3% !important;
+    .desc{
+        font-weight: normal;
+        position: relative;
+        padding: 3px 0 0;
+        display: block;
+        font-size: 1rem;
+            &:before{
+                content: "";
+                position: absolute;
+                right: -0.7rem;
+                top: -25px;
+                background: url(../img/yes_ico.png) no-repeat;
+                width: 25px;
+                height: 25px;
+                background-size: 70%;
+            }
+    }
+    .count{
+        display: block;
+        border-bottom: 1px solid #ccc;
+        padding: 0 2rem 8px 0.5rem;
+        font-size: 1.7rem;
+    }
+    .rate_dinamic{
+        padding: 0.3rem 0 0;
+        text-align: center;
+        font-weight: bold;
+        color: @color_gray2;
+        font-size: 1.5rem;
+        line-height: 1rem;
+        position: relative;
+            .title{
+                display: block;
+                font-size: .9rem;
+                text-align: center;
+                font-weight: 400;
+                line-height: 1rem;
+                padding: 0 0 0.2rem;
+                
+            }
+        .desc{
+            color: #363636 !important;
+        }
+    }
+    .rate_static{
+        padding: 0.1rem 0 0;
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background: #6f8eaf;
+        text-align: center;
+        position: relative;
+    }
+    .title{
+        display: none !important;
+    }
+}

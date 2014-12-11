@@ -1,0 +1,60 @@
+.search_content_section{
+    height: 10rem;
+    overflow: hidden;
+    background: @color_content;
+    border-bottom: 1px solid #d3deeb;
+    .left_box{
+        padding:  1.563rem 1.25rem;
+        float: left;
+        width: 80%;
+        height: 100%;
+        position: relative;
+            &:before {
+                content: '';
+                display: block;
+                height: 4rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -5px;
+                z-index: 6;
+                background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0)),color-stop(80%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+                background: -webkit-linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%);
+                background: -moz-linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%);
+                background: -o-linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%);
+                background: linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%);
+            }
+            .title{
+                .font(2rem, 2.5rem);
+                font-weight: bold;
+                color:@color_gray2;
+                margin: 0 0 1rem;
+                    sup{
+                        font-size: 1.4rem;
+                    }
+            }
+            .infoabout{
+                font-size: 1.5rem;
+                color: @color_gray2;
+            }
+    }
+    .right_box{
+        float: left;
+        width: 20%;
+        height: 100%;
+        position: relative;
+        border-left: 1px solid #d3deeb;
+        cursor: pointer;
+        z-index: 9;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat -93px -50px;
+                width: 50px;
+                height: 50px;
+                margin: -25px 0 0 -25px;
+            }
+    }
+}

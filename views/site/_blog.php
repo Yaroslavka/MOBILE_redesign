@@ -1,0 +1,1 @@
+<a class="wrapper_link_blog" href="<?php echo Yii::app()->createUrl('/site/blogSingle',array('id'=>$model['translit']));?>"><h2><?php echo $model->title;?></h2><?php echo!empty($model->description)?"<p>".$model->description."</p>":'';?></a>

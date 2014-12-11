@@ -1,0 +1,98 @@
+.doctor_address_map{
+    border-top: 1px solid #d9e2ec;
+    border-bottom: 1px solid #d9e2ec;
+    background: #fff;
+    margin: -1px 0 0 0;
+    padding: 2.3rem 1% 2.3rem 1%;
+	.full_w;
+        &:nth-child(even){
+            background: @color_content;;
+        }
+    .clinic_name{
+        margin: 0 0 0.4rem 3rem;
+        a{
+            text-decoration: none;
+            color: @color_gray2;
+            .font(2rem, 2.4rem);
+            position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -3rem;
+                    background: url('../img/sprite.png') no-repeat -32px -139px;
+                    width: 23px;
+                    height: 23px;
+                    top: 0;
+                }
+        }
+    }
+    .address_doctor{
+        margin: 0 0 1rem;
+        padding: 0 0 0 3.3rem;
+        a{
+            text-decoration: none;
+            border-bottom: 1px dashed #b2c1d3;
+            font-size: 1.6rem;
+            color: @color_blue;
+        }
+    }
+    .map{
+        height: 250px;
+        margin: 2rem 0 0;
+        overflow: hidden;
+        display: none;
+        img{
+            max-width: 100%;
+        }
+    }
+    .beside_subway_wrapper{
+        position: relative;
+        cursor: pointer;
+		padding: 0 5% 0 0;
+            &:before{
+                content: "";
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat 0 -39px;
+                width: 25px;
+                height: 16px;
+                margin: -8px 0 0;
+            }
+    }
+    .beside_subway_wrapper.active{
+            &:before{
+                content: "";
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                background: url('../img/sprite.png') no-repeat -182px -284px;
+                width: 25px;
+                height: 16px;
+                margin: -8px 0 0;
+            }
+    }
+    .beside_subway{
+        padding: 0 0 0 3.3rem;
+        margin: 0;
+        color: #999;
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem;
+        .color_subway{
+            font-size: 1.7rem;
+        }
+        .car{
+            background: url('../img/sprite.png') no-repeat -63px -141px;
+            width: 23px;
+            height: 10px;
+            display: inline-block;
+            
+        }
+        .people{
+            background: url('../img/sprite.png') no-repeat -93px -139px;
+            width: 11px;
+            height: 15px;
+            display: inline-block;
+        }
+    }
+}
