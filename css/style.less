@@ -1691,6 +1691,22 @@ width: 69%;
         }
     }
 }
+.network_clinic_menu{
+    position: relative;
+    a{
+        padding: 1.563rem 2.813rem 1.563rem 5.813rem !important ;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 2.5rem;
+            top: 21px;
+            background: url(../img/network-ico.png) no-repeat;
+            width: 24px;
+            height: 16px;
+            background-size: 70%;
+        }
+    }
+}
 .gallery_container{
     margin: 0 0 1rem;
 }
@@ -1709,13 +1725,14 @@ width: 69%;
         color: #fff;
         font-size: 2rem;
         background: #aecb66;
-        width: 20%;
-        height: 5.3rem;
+        width: 139px;
+        height: 84px;
         position: fixed;
         right: 1rem;
         bottom: 0;
         border-radius: 5px;
         float: right;
+        background: url(../img/call_btn.png) no-repeat;
             a{
                 display: block;
                 width: 100%;
@@ -1723,17 +1740,17 @@ width: 69%;
                 position: relative;
                 z-index: 9;
             }
-            &:before{
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                background: url(../img/phone_ico.png) no-repeat;
-                width: 64px;
-                height: 64px;
-                margin: -18px 0 0 -18px;
-                background-size: 60%;
-            }
+//            &:before{
+//                content: "";
+//                position: absolute;
+//                left: 50%;
+//                top: 50%;
+//                background: url(../img/phone_ico.png) no-repeat;
+//                width: 64px;
+//                height: 64px;
+//                margin: -18px 0 0 -18px;
+//                background-size: 60%;
+//            }
     }
 /////////////////////////////////////   ТАБЫ Клинники
 .clinic_tabs{
@@ -1921,4 +1938,23 @@ width: 69%;
 .doctor_item .name,
 .doctor_item .second_name{
     display: block !important;
+}
+////////////////////////////////////////////// fixed_bottom_container////////////////////////
+
+.fixed_bottom_container{
+    border-top: 1px solid #d4d4d4;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+        span{
+            display: block;
+            width: 70%;
+            text-align: center;
+            padding: 0 0 0 2rem;
+            color: #adadad;
+            .font(2.5rem, 11.5rem);
+        }
 }

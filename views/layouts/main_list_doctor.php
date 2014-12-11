@@ -21,6 +21,10 @@
         <?php echo $content; ?>
     </div>
 </div>
+<div class="fixed_bottom_container">
+    <span>Поможем найти специалиста</span>
+    <div class="call_btn"><a href="tel:+7 (499) 705-35-35"></a></div>
+</div>
 <div class="popup_search main">
     <?php $this->renderPartial('//layouts/elements/search'); ?>
 </div>

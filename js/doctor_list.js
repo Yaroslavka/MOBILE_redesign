@@ -81,11 +81,20 @@ mb.doctorList = (function(){
            $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
         });
     }
+// динамический пейджер
+    var pager_dinamic = function(){
+    $(window).on("scroll", function(){
+        if (($(window).innerHeight() + $(window).scrollTop()) >= $(document).height()){
+            window.location.href = $(".paginator li.selected").next().find("a").attr("href");
+        }
+    });
+    }
     var init = function(){
         search_top();
         map_slide();
         count_subway(2);
         rate_dinamic();
+        pager_dinamic();
     }
     return {
         init: init
