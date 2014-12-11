@@ -74,6 +74,19 @@
     }
   .menu_footer.main_menu_footer{
     background: #fff !important;
+      a{
+        &:before{
+          background: url(../img/menu_black.png) no-repeat;
+        }
+      }
+  }
+  .menu_footer.main_menu_footer.active{
+    background: #343434 !important;
+          a{
+        &:before{
+          background: url(../img/menu.png) no-repeat;
+        }
+      }
   }
 }
 // BODY
