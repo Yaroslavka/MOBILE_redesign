@@ -1,7 +1,8 @@
 mb.doctorList = (function(){
 // Поиск вверху на списке выезжалка
     var search_top = function(){
-        $("body").on("click", ".search_content_section .right_box", function(){
+        $(".top_box_select_category .top_description").append($(".search_content_section .title").clone())
+        $("body").on("click", ".search_content_section .left_box", function(){
             if($(this).hasClass("cl")){
                 $(this).removeClass("cl");
                 $(".popup_search").css({"top":"-100%"}).removeClass("active");
@@ -9,8 +10,10 @@ mb.doctorList = (function(){
             }
             else{
                 $(this).addClass("cl");
-                $(".popup_search").css({"top":"0"});
-                  $(".doctor_list .content, .header_mini").css({"top": $(".popup_search").height()});
+                 
+                $(".search_content_section").hide();
+                  $(".popup_search").css({"top": $(".header_mini").height()});
+                  $(".doctor_list .content").css({"top": $(".popup_search").height()});
             }
         });
         $("body").on("click", ".overlay", function(){
@@ -18,21 +21,6 @@ mb.doctorList = (function(){
                 $(".overlay").hide();
             });
         });
-// Выезжалка на прокрутке
-//        $(window).on("touchmove",function(){
-//            if($(window).scrollTop() === 0){
-//
-//                $(".popup_search").css({"top":"0"}).addClass("active");
-//                $(".doctor_list .content, .header_mini").css({"top": $(".popup_search").height()});
-//            }
-//        });
-//        $(window).on("touchmove", function(){
-//            if($(window).scrollTop() > $(".popup_search").height()  && $(".popup_search").hasClass("active")){
-//                $(".popup_search").css({"top":"-100%"}).removeClass("active");
-//                $(".doctor_list .content, .header_mini").css({"top": "0"});
-//
-//            }
-//        });
         $("body").on("click", ".select_category", function(){
             $(".menu_specialist_wrapper").show().animate({"left":"0"},400);
             $(".all_specialist").find("span").text("Назад");
@@ -102,4 +90,5 @@ mb.doctorList = (function(){
 }());
 $(function(){
     mb.doctorList.init();
+   
 });
