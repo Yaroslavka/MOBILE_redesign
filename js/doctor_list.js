@@ -61,8 +61,26 @@ mb.doctorList = (function(){
     }
 // Динамический рейтинг
     var rate_dinamic = function(){
+        var color = {
+            red: ['#b51a1a', '#f7dddd'],
+            orange: ['#ffa422', '#ffe1b7'],
+            blue: ['#6589ae', '#d9e3ec']
+        }
         $(".doctor_item").each(function(){
-           $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
+            if(7 < $(this).find('.count').text()){
+                $(this).find('.count').css({'color':color.blue[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.blue[0]});
+                $(this).find(".rate_box .desc").css({'background':color.blue[1]});
+            }else if(4 < $(this).find('.count').text()){
+                $(this).find('.count').css({'color':color.orange[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.orange[0]});
+                $(this).find(".rate_box .desc").css({'background':color.orange[1]});
+            }else{
+                $(this).find('.count').css({'color':color.red[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.red[0]});
+                $(this).find(".rate_box .desc").css({'background':color.red[1]});
+            }
+               $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
         });
     }
 // динамический пейджер

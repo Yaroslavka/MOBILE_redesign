@@ -1,4 +1,4 @@
-<?php if(!empty($model->doctor_review_s_limit)): ?><strong class="title">Отзывы о докторе</strong>
+<?php if(!empty($model->doctor_review_s_limit)): ?><strong class="title">Отзывы пациентов о докторе:</strong>
 <div class="reviews_clinic_items_wrapper">
     <?php foreach($model->doctor_review_s_limit as $value): ?>
     <div class="reviews_clinic_items">

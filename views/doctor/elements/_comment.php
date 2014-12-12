@@ -1,4 +1,4 @@
-<?php if(!empty($data)): ?><strong class="title">Отзывы о докторе</strong>
+<?php if(!empty($data)): ?><strong class="title">Отзывы пациентов о докторе:</strong>
 <div class="reviews_clinic_items_wrapper">
     <?php foreach($data as $value): ?>
     <div class="reviews_clinic_items">

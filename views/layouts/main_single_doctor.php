@@ -18,6 +18,12 @@
 <body>
 <div id="doctor_single" class="page doctor_single">
     <?php $this->renderPartial('//layouts/elements/header'); ?>
+    <div class="header_top_section clearfix">
+      <div class="menu_wrapper_bottom">
+          <div class="search_specialist"><a class="full_link items_service" href="/services"><span>Список услуг</span></a></div>
+          <div class="menu_footer"><a href="#nav-panel"></a></div>
+      </div>
+    </div>
     <div class="content">
         <?php echo $content; ?>
     </div>
