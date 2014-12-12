@@ -1,20 +1,16 @@
 mb.doctorList = (function(){
 // Поиск вверху на списке выезжалка
     var search_top = function(){
-        $(".top_box_select_category .top_description").append($(".search_content_section .title").clone())
-        $("body").on("click", ".search_content_section .left_box", function(){
-            if($(this).hasClass("cl")){
-                $(this).removeClass("cl");
-                $(".popup_search").css({"top":"-100%"}).removeClass("active");
-                $(".doctor_list .content, .header_mini").css({"top": "0"});
-            }
-            else{
-                $(this).addClass("cl");
-                 
-                $(".search_content_section").hide();
-                  $(".popup_search").css({"top": $(".header_mini").height()});
-                  $(".doctor_list .content").css({"top": $(".popup_search").height()});
-            }
+        $(".top_box_select_category .top_description").append($(".search_content_section .title").clone());
+        $("body").on("click", ".search_content_section .left_box", function(){  
+            $(".search_content_section").hide();
+            $(".popup_search").css({"top": $(".header_mini").height()});
+            $(".doctor_list .content").css({"top": $(".popup_search").height()});
+        });
+        $("body").on("click", ".search_section .close", function(){
+            $(".search_content_section").show();
+            $(".popup_search").css({"top":"-100%"});
+            $(".doctor_list .content, .header_mini").css({"top": "0"});
         });
         $("body").on("click", ".overlay", function(){
             $(".popup_search").animate({"top":"-100%"},400, function(){
