@@ -18,10 +18,23 @@
 		margin: 0 0 1rem 4rem;
 		font-size: 1.7rem;
 		li{
-			position: relative;
-			margin: 0 0 0.2rem;
-            line-height: 1.5;
-            list-style-type: disc;
-		}
+        position: relative;
+        margin: 0 0 0.2rem;
+        line-height: 1.5;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 9.5px 0 0 -2rem;
+                width: 7px;
+                height: 7px;
+                border-radius: 60px;
+                background: #b2c4d6;
+            }
+        a{
+            text-decoration: none;
+        }
+    }
 	}
 }

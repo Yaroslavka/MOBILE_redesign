@@ -31,9 +31,16 @@ mb.doctorSingle = (function(){
             }
         });
     }
+// Динамический рейтинг
+    var rate_dinamic = function(){
+       $(".doctor_wrapper .rate_box .desc span").animate({"height": ($('.doctor_wrapper .count').text() * 10) + "%"}, 1500);
+        $(".similar_doctors_item").each(function(){
+           $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
+        });
+    }
     var init = function(){
-       //scrollHide();
         map_slide();
+        rate_dinamic();
     }
     return {
         init: init
