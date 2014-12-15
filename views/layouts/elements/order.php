@@ -7,14 +7,12 @@
     </div>
     <div class="middle">
 
-        <div class="info_block">
+        <div class="info_block clearfix">
             <div class="img_wrapper"><img src="" alt=""></div>
             <div class="info_left">
                 <p class="doctor_order_name_first"></p>
                 <p class="doctor_order_name_last"></p>
                 <p class="clinic_order_name" id="clinic-name"></p>
-                
-
                 <p class="doctor_category"></p>
                 <p class="clinic_name"><span></span></p>
                 <p class="address_doctor"></p>
@@ -22,8 +20,6 @@
             </div>
         </div>
         <div class="form_box">
-           
-
             <?php echo CHtml::beginForm('/', 'post',array('class'=>'form-doctor-comment')); ?>
                 <?php echo CHtml::hiddenField('sn','m.medbooking.com'); ?>
                 <?php echo CHtml::hiddenField('AApiRecord[gender]','1'); ?>
@@ -42,23 +38,26 @@
                     <input  type="text" value="" name="AApiRecord[telephone]">
                     <div class="error">Заполните поле телефона</div>
                 </div>
+                <div class="line"><span>или позвоните по телефону</span></div>
+                <div class="order_phone">+7 (499) 705-35-35</div>
+                    <div class="bottom">
+                        <p class="description">
+                            После отправки с Вами в ближайшее<br>
+                            время свяжется специалист call-центра<br>
+                            и уточнит все интересующие Вас вопросы.<br>
+                        </p>
+                        <p class="copy_order">
+                            Отправляя заявку, Вы соглашаетесь<br>
+                            с пользовательским соглашением<br>
+                        </p>
+                    </div>
                 <div class="row btn_send">
                     <input type="submit" value="Записаться к врачу">
                 </div>
             </form>
         </div>
     </div>
-    <div class="bottom">
-        <p class="description">
-            После отправки с Вами в ближайшее<br>
-            время свяжется специалист call-центра<br>
-            и уточнит все интересующие Вас вопросы.<br>
-        </p>
-        <p class="copy_order">
-            Отправляя заявку, Вы соглашаетесь<br>
-            с пользовательским соглашением<br>
-        </p>
-    </div>
+
 </div>
 <div class="order_wrapper_exit">
     <div class="top"><span class="close"></span></div>
