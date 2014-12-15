@@ -150,6 +150,7 @@ var flag_fixed = true
             if(that.hasClass("active")){
                 $(".overlay_menu").remove();
                 that.removeClass("active");
+                $("html, body").removeClass("ovh");
                 // Главная
                 if(that.hasClass("main_menu_footer")){
                     $(".menu_nav_wrapper").animate({"left":"-80%"},200, function(){
@@ -171,6 +172,7 @@ var flag_fixed = true
                 // Главная
                 if(that.hasClass("main_menu_footer")){
                     that.addClass("active");
+                    $(".footer").addClass('index_layer');
                     $(".menu_nav_wrapper").show();
                     $(".menu_nav_wrapper").animate({"left":"0"},200);
                     $(".footer, .page").animate({"left":"80%"},200);
@@ -178,6 +180,7 @@ var flag_fixed = true
                 }
                 else{
                     that.addClass("active");
+                    $("html, body").addClass("ovh");
                     $(".menu_nav_wrapper").show();
                     $(".menu_nav_wrapper").animate({"right":"0"},200);
                     $(".page, .footer").animate({"left":"-80%"},200);
