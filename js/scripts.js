@@ -375,14 +375,10 @@ var flag_fixed = true
                 $(".order_wrapper .title_box").show();
                 $(".order_wrapper .title_box_home").hide();
                     if($(".page").hasClass("doctor_single")){
+                        $("body").addClass("fix");
                         $(".order_wrapper .img_wrapper img").attr('src', $('.doctor_wrapper img').attr('src'));
-                        
-                        
                         $(".order_wrapper .doctor_order_name_first").text($(".doctor_wrapper .name").text());
                         $(".order_wrapper .doctor_order_name_last").text($(".doctor_wrapper .second_name").text());
-                        
-                        
-                        
                         $(".order_wrapper .doctor_category").text($(".top_doctor_single .doctor_category").text());
                         $(".order_wrapper .clinic_name span").text($(".doctor_snippet_clinic .clinic_name span").text());
                         $(".order_wrapper .address_doctor").text($(".doctor_snippet_clinic .address_doctor span").text());
@@ -396,23 +392,24 @@ var flag_fixed = true
             }
         });
     // Закрытие формы
-        $("body").on("touchstart", ".order_wrapper .close", function(){
-           $(".order_wrapper_exit").show().animate({"top":"0"}, 400); 
-        });
+//        $("body").on("touchstart", ".order_wrapper .close", function(){
+//           $(".order_wrapper_exit").show().animate({"top":"0"}, 400); 
+//        });
     // zaeb_form 
-        $("body").on("touchstart", ".order_wrapper_exit .close , .btn_no", function(){
-           $(".order_wrapper_exit").animate({"top":"100%"}, 400, function(){
-               $(this).hide();
-           }); 
-        });
+//        $("body").on("touchstart", ".order_wrapper_exit .close , .btn_no", function(){
+//           $(".order_wrapper_exit").animate({"top":"100%"}, 400, function(){
+//               $(this).hide();
+//           }); 
+//        });
     // full_exit_form
-        $("body").on("touchstart", ".btn_yes", function(){
-            $(".order_wrapper_exit, .order_wrapper").animate({"top":"100%"}, 400, function(){
+        $("body").on("click", ".order_wrapper .close", function(){
+            $("body").removeClass("fix");
+            $(".order_wrapper").animate({"top":"100%"}, 400, function(){
                $(this).hide();
            }); 
         });
     // exit_succes
-        $("body").on("touchstart", ".success_order .close", function(){
+        $("body").on("click", ".success_order .close", function(){
             $(".success_order").animate({"top":"100%"}, 400, function(){
                $(this).hide();
            }); 

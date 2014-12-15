@@ -8,8 +8,30 @@
     z-index: 350;
     background: #fff;
         .info_block{
+            text-align: left;
             padding: 3rem 2rem;
-            border-bottom: 1px solid #d3deeb;
+            border-bottom: 5px solid #d3deeb;
+            font-size: 1.7rem;
+        }
+        .doctor_order_name_first{
+            .doctor_items_wrapper .doctor_item .name;
+        }
+        .doctor_order_name_last{
+            .doctor_items_wrapper .doctor_item .second_name;
+        }
+        .doctor_category{
+            .doctor_items_wrapper .doctor_item .doctor_wrapper .right .doctor_category;
+        }
+        .clinic_name{
+            .doctor_address_map .clinic_name;
+        }
+        .address_doctor{
+            .doctor_address_map .address_doctor;
+            line-height: 2rem;
+        }
+        .order_phone{
+            font-weight: 700;
+            font-size: 3rem;
         }
         .img_wrapper{
             float: left;
@@ -19,9 +41,22 @@
                     max-width: 100%;
                 }
         }
+        .line{
+            border-top: 1px solid #d3deeb;
+            position: relative;
+            margin: 5rem 0 4rem;
+                span{
+                    padding: 0 10px;
+                    font-size: 1.7rem;
+                    position: relative;
+                    background: #fff;
+                    top: -8px;
+                }
+        }
         .info_left{
             float: left;
-            widows: 85%;
+            width: 85%;
+            padding: 0 0 0 3%;
         }
         .top{
             height: 7.5rem;
@@ -32,6 +67,20 @@
                     width: 80%;
                     height: 100%;
                     border-right: 1px solid #d3deeb;
+                        span{
+                            position: relative;
+                                &:before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 32px;
+                                    height: 33px;
+                                    background: url(../img/pen_ico.png) no-repeat;
+                                    position: absolute;
+                                    left: -50px;
+                                    top: 50%;
+                                    margin: -16px 0 0;
+                                }
+                        }
                         span{
                             font-weight: bold;
                             .font(3rem, 7.5rem);
@@ -54,7 +103,7 @@
                     position: absolute;
                     left: 50%;
                     top: 50%;
-                    background: url('../img/close_search_form.png') no-repeat;
+                    background: url('../img/close_order.png') no-repeat;
                     width: 39px;
                     height: 39px;
                     margin: -22px 0 0 -22px;
@@ -95,7 +144,7 @@
             padding: 2.3rem 0 2rem;
         }
         form{
-            padding: 1.5rem 2%;
+            padding: 1.5rem 2rem;
             input[type="text"],
             input[type="number"]{
                 border: none;
@@ -178,6 +227,7 @@
             .btn_send{
                 background: @color_green;
                 margin: 0;
+                border-radius: 100px;
                     &:hover{
                         background: #94aa5f;
                     }
@@ -185,10 +235,11 @@
         }
         .bottom{
             padding: 1.3rem 0;
+            margin: 0 0 1rem;
         }
         .description{
-            color: #9db0c5;
-            .font(1.5rem, 1.8rem);
+            color: #363636;
+            .font(1.7rem, 1.8rem);
             margin: 0 0 1rem;
         }
         .copy_order{

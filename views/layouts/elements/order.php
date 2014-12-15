@@ -52,7 +52,7 @@
                         </p>
                     </div>
                 <div class="row btn_send">
-                    <input type="submit" value="Записаться к врачу">
+                    <input type="submit" value="Отправить">
                 </div>
             </form>
         </div>
