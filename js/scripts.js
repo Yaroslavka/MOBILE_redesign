@@ -190,7 +190,7 @@ var flag_fixed = true
         });
         $("body").on("click", ".overlay_menu", function(){
             $(".overlay_menu").remove();
-            
+            $("html, body").removeClass("ovh");
                 $(".menu_footer").removeClass("active");
                 // Главная
                 if($(".menu_footer").hasClass("main_menu_footer")){
