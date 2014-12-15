@@ -369,19 +369,29 @@ var flag_fixed = true
             if($(this).hasClass("order_home_btn")){
                 $(".order_wrapper .title_box").hide();
                 $(".order_wrapper .title_box_home").show();
-                $(".order_wrapper").show().animate({"top":"0"}, 400); 
+                $(".order_wrapper").show().animate({"top":$(".header_mini").height()}, 400); 
             }
             else{
                 $(".order_wrapper .title_box").show();
                 $(".order_wrapper .title_box_home").hide();
                     if($(".page").hasClass("doctor_single")){
-                        $(".order_wrapper .doctor_order_name").text($(this).attr("data-doctor_name"));
-                        $(".order_wrapper").show().animate({"top":"0"}, 400); 
+                        $(".order_wrapper .img_wrapper img").attr('src', $('.doctor_wrapper img').attr('src'));
+                        
+                        
+                        $(".order_wrapper .doctor_order_name_first").text($(".doctor_wrapper .name").text());
+                        $(".order_wrapper .doctor_order_name_last").text($(".doctor_wrapper .second_name").text());
+                        
+                        
+                        
+                        $(".order_wrapper .doctor_category").text($(".top_doctor_single .doctor_category").text());
+                        $(".order_wrapper .clinic_name span").text($(".doctor_snippet_clinic .clinic_name span").text());
+                        $(".order_wrapper .address_doctor").text($(".doctor_snippet_clinic .address_doctor span").text());
+                        $(".order_wrapper").show().animate({"top":$(".header_mini").height()}, 400); 
                     }
                     else if($(".page").hasClass("clinic_single")){
                         $(".order_wrapper .doctor_order_name").text($(this).attr("data-clinic_name"));
                         $(".order_wrapper .title_box span").text("на прием в клиннику");
-                        $(".order_wrapper").show().animate({"top":"0"}, 400); 
+                        $(".order_wrapper").show().animate({"top":$(".header_mini").height()}, 400); 
                     }
             }
         });

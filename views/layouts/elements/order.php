@@ -1,17 +1,29 @@
 <div class="order_wrapper">
-    <div class="top"><span class="close"></span></div>
-    <div class="middle">
-        <div class="title_box">
-            <strong>Запишитесь</strong>
-            <span>на прием к врачу</span>
+    <div class="top clearfix">
+        <div class="left"><span>Записаться на прием</span></div>
+        <div class="right">
+            <span class="close"></span>
         </div>
-        <div class="title_box_home">
-            <strong>Вызвать</strong>
-            <span>доктора на дом</span>
+    </div>
+    <div class="middle">
+
+        <div class="info_block">
+            <div class="img_wrapper"><img src="" alt=""></div>
+            <div class="info_left">
+                <p class="doctor_order_name_first"></p>
+                <p class="doctor_order_name_last"></p>
+                <p class="clinic_order_name" id="clinic-name"></p>
+                
+
+                <p class="doctor_category"></p>
+                <p class="clinic_name"><span></span></p>
+                <p class="address_doctor"></p>
+                
+            </div>
         </div>
         <div class="form_box">
-            <p class="doctor_order_name" id="doctor-name"></p>
-            <p class="clinic_order_name" id="clinic-name"></p>
+           
+
             <?php echo CHtml::beginForm('/', 'post',array('class'=>'form-doctor-comment')); ?>
                 <?php echo CHtml::hiddenField('sn','m.medbooking.com'); ?>
                 <?php echo CHtml::hiddenField('AApiRecord[gender]','1'); ?>
