@@ -1,63 +1,57 @@
 .shedule_container{
-    margin: 9rem 0 1rem 0;
+    
     clear: both;
     .day_row{
         .day{
             //margin: 0 -1px -1px 0;
             //border: 1px solid #fff;
-            background: #f2f2f2;
+
             width: 14.2%; 
             float: left;
             text-align: center;
             font-weight: bold;
-            .font(1.7rem, 4rem);
+            .font(1.7rem, 2rem);
             height: 4rem;
             color: @color_gray2;
             span{
-                display: block;
+          
             }
         }
     }
     .time_row{
+        margin: 0 0 2rem 0;
         &>div{
-            //margin: -1px -1px 0 0;
-            background: #f2f2f2;
-            height: 4.5rem;
-            //border: 1px solid #fff;
+
         }
         .time_days{
             float: left;
-            .font(1.7rem, 4.5rem);
+            .font(1.7rem, 2rem);
             color: #333;
                 span{
-                    .font(1.7rem, 2.5rem);
+                    .font(1.7rem, 2rem);
                     color: #333;
                 }
         }
         .weekend{
             float: left;
-            width: 14.2%;
             text-align: center;
             color: #333;
-            .font(1.7rem, 4.5rem);
+            .font(1.7rem, 2rem);
             span{
-                display: block;
                 .font(1.4rem, 2rem);
             }
         }
         .time_weekdays_all{
             //border-bottom: 2px solid #e8e8e8 !important;
             text-align: center;
-            width: 71%;
             float: left;
-            .font(1.4rem, 4.5rem);
+            .font(1.4rem, 2rem);
             color: #333;
             //margin: 0 -4px 0 0;
         }
     }
     .time_days{
         text-align: center; 
-        width: 14.2%;
         span{
             display: block;
         }
@@ -70,12 +64,27 @@
     }
     .day_Saturday,
     .time_Saturday{
-        background: #deeaf3 !important;
+    
     }
     .day_Sunday,
     .time_Sunday{
         color: #e81818 !important;
-        background: #fee8e8!important;
+     
         
+    }
+    .time_row> div{
+        margin: 0 0 0 20px;
+            &:first-child{
+                position: relative;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: -20px;
+                        top: 0;
+                        background: url(../img/time_ico.png) no-repeat;
+                        width: 17px;
+                        height: 17px;
+                    }
+            }
     }
 }

@@ -267,14 +267,7 @@
     }
     .beside_subway_wrapper:before{display: none;}
 .doctor_list{
-            .column_rate_reviews{
-            position: absolute;
-            right: 2rem;
-            top: 2rem;
-            .doctor_items_wrapper .doctor_item .doctor_wrapper .column_rate_reviews .reviews_box_wrap{
-                margin: 0 0.6rem 0 0;
-            }
-        }
+
     .header_mini{
         position: relative;
     }
@@ -284,6 +277,14 @@
     }
 
 }
+            .column_rate_reviews{
+            position: absolute;
+            right: 2rem;
+            top: -1rem;
+            .doctor_items_wrapper .doctor_item .doctor_wrapper .column_rate_reviews .reviews_box_wrap{
+                margin: 0 0.6rem 0 0;
+            }
+        }
 .doctor_items_wrapper{
     border-top: 1px solid #fff;
     .doctor_item{
@@ -615,7 +616,7 @@
         border-bottom: 2px solid #d1dce8;
         background: #fff;
             &:nth-child(odd){
-                background: #eff5fb;
+                background: #f9fbfd;
             }
         .clinic_wrapper{
             .doctor_items_wrapper .doctor_item .doctor_wrapper;
@@ -628,8 +629,7 @@
             width: 100%;
         }
         .map{
-            height: 290px;
-            margin: 2rem 0 -1rem;
+            margin: 2rem 1rem -1rem;
             overflow: hidden;
             display: none;
             clear: both;
@@ -637,6 +637,7 @@
         .name{
             width: 80%;
             font-size: 2rem;
+            margin: 0 0 1rem;
         }
     }
     .doctor_address_map{
@@ -1089,7 +1090,7 @@
 }
 .desc_middle{
     width: 80%;
-    .font(1.5rem, 1.8rem);
+    .font(1.7rem, 2rem);
     color: #363636;
     margin: 0 0 1rem;
 }
@@ -1558,10 +1559,25 @@
 //    border-color: #343434 !important;
 }
 //КАРТА
-.yandex-map-list{
+.active_map{
     width: 100% !important;
     height: 40rem !important;
+    border-radius: 0 !important;
+ 
 }
+.yandex-map-list{
+//    width: 100% !important;
+//    height: 40rem !important;
+    width: 100px !important;
+    height: 100px !important;
+    float: left;
+    margin: 0 3rem 0 0;
+    overflow: hidden;
+        .ymaps-map{
+            border-radius: 100px;
+        }
+}
+
 .ymaps-logotype-div,
 .ymaps-copyrights-legend{
     display: none !important;
@@ -1577,6 +1593,10 @@
 .clinic_single{
     .column_btn_doctor{
         margin: 7rem 0 0 1rem;
+    }
+    .shedule_container{
+        padding: 2rem 0 0;
+        border-top: 1px solid #d6e3ec;
     }
 }
 .clinic_single.network_single{
@@ -2004,4 +2024,54 @@ width: 69%;
 }
 .search_content_section .menu_footer.active{
     background: #343434!important;
+}
+.network_clinic{
+    float: right;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    border-bottom: 1px dashed #6384a8;
+    text-decoration: none;
+    color: #6384a8;
+
+}
+.sames_doctor_wrapper{
+    .column_rate_reviews{
+        top: 2rem;
+    }
+}
+.clinic_single .beside_subway_wrapper {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin: 2rem 0 0;
+}
+.clinic_single .doctor_address_map{
+    overflow: hidden;
+}
+.clinic_single .doctor_address_map .map{
+    margin: 0;
+}
+.clinic_single .doctor_address_map:before{
+    display: none;
+}
+.close_wrapper_map{
+    display: none;
+    width: 10rem;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+    border-right: 1px solid #d6e3ec;
+    .close{
+        width: 39px;
+        height: 39px;
+        background: url(../img/close_order.png) no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -20px 0 0 -20px;
+    }
 }

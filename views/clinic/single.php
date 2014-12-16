@@ -9,36 +9,33 @@
                         <?php if(!empty($model->description)):?><div class="description desc_middle"><?php echo MobiController::cutString($model->description,500);?></div><?php endif;?>
                     </div>
                     <?php $this->renderPartial('//clinic/elements/rate',array('model'=>$model));?>
+                    <div class="shedule_container">
+                        <div class="time_row clearfix">
+                            <?php if(!empty($model->regime_byd)): ?>
+                            <div class="time_weekdays_all">Пн - Пт: <?php $this->renderPartial('//clinic/elements/_time_w',array('string'=>$model->regime_byd));?></div>
+                            <?php else: ?>
+                            <div class="time_days time_Monday">Пн: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_mon));?></div>
+                            <div class="time_days time_Tuesday">Вт: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_tue));?></div>
+                            <div class="time_days time_Wednesday">Ср: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_wed));?></div>
+                            <div class="time_days time_Thursday">Чт: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_thu));?></div>
+                            <div class="time_days time_Friday">Пт: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_fri));?></div>
+                            <?php endif; ?>
+                            <div class="weekend time_Saturday">Сб: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_sat));?></div>
+                            <div class="weekend time_Sunday">Вс: <?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_sun));?></div>
+                        </div>
+                    </div>
                     <div class="doctor_address_map">
-                        <div class="beside_subway_wrapper">
+                       <div class="close_wrapper_map">
+                           <div class="close"></div>
+                       </div>
+                        <div class="map clearfix">
+                            <div id="new_map" style="width:100%;height:1px;" data-lat="<?php echo!empty($model->lat)?$model->lat:'';?>" data-lng="<?php echo!empty($model->lng)?$model->lng:'';?>" ></div>
+                            <div id="small_map" style="width:100%;height:273px;" data-lat="<?php echo!empty($model->lat)?$model->lat:'';?>" data-lng="<?php echo!empty($model->lng)?$model->lng:'';?>" id="map-<?php echo $model->id;?>" class="yandex-map-list"></div>
+                            <div class="beside_subway_wrapper">
                             <p class="address_doctor"><span><?php echo !empty($model->address)?$model->address:'';?></span></p>
                             <?php $this->renderPartial('//clinic/elements/subway',array('data'=>$model->clinic_subway_s));?>
                         </div>
-                        <div class="map">
-                            <div style="width:675px;height:273px;" data-lat="<?php echo!empty($model->lat)?$model->lat:'';?>" data-lng="<?php echo!empty($model->lng)?$model->lng:'';?>" id="map-<?php echo $model->id;?>" class="yandex-map-list"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="shedule_container">
-                    <div class="day_row clearfix">
-                        <div class="day day_Monday">Пн</div>
-                        <div class="day day_Tuesday">Вт</div>
-                        <div class="day day_Wednesday">Ср</div>
-                        <div class="day day_Thursday">Чт</div>
-                        <div class="day day_Friday">Пт</div>
-                        <div class="day day_Saturday">Сб</div>
-                        <div class="day day_Sunday">Вс</div>
-                    </div>
-                    <div class="time_row clearfix">
-                        <?php if(!empty($model->regime_byd)): ?><div class="time_weekdays_all"><?php $this->renderPartial('//clinic/elements/_time_w',array('string'=>$model->regime_byd));?></div><?php else: ?>
-                        <div class="time_days time_Monday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_mon));?></div>
-                        <div class="time_days time_Tuesday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_tue));?></div>
-                        <div class="time_days time_Wednesday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_wed));?></div>
-                        <div class="time_days time_Thursday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_thu));?></div>
-                        <div class="time_days time_Friday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_fri));?></div>
-                        <?php endif; ?>
-                        <div class="weekend time_Saturday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_sat));?></div>
-                        <div class="weekend time_Sunday"><?php $this->renderPartial('//clinic/elements/_time',array('string'=>$model->regime_sun));?></div>
                     </div>
                 </div>
                 <?php $this->renderPartial('//clinic/elements/record',array('model'=>$model));?>

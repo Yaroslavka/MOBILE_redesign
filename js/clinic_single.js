@@ -61,28 +61,37 @@ mb.clinicSingle = (function(){
     }
     // Карта выезжалка
     var map_slide = function(){
-        $("body").on("click", ".beside_subway_wrapper", function(){
-                if($(this).parents(".similar_clinic_wrapper").length){
-                    console.log($(this))
-                    return false;
-                }
-                $($('.map-link').not($(this))).removeClass('active-map-link');
-                var map = $(this).siblings('.map');
-                map.find('.ymaps-map').remove();
-                eel = map.find('.yandex-map-list')
+
+                eel = $('.yandex-map-list');
                 ymaps.ready(initSingle);
-      
-            var that = $(this).parents(".doctor_address_map");
-            if(that.hasClass("active")){
-                that.removeClass("active");
-                that.find(".map").slideUp(400);
-            }
-            else{
-                $(".map").slideUp(400);
-                that.addClass("active");
-                that.find(".map").slideDown(400);
-            }
-        });
+        
+        
+        
+        
+        
+                $("body").on('click', '.map', function(){
+                    $(".close_wrapper_map").show();
+                    $('.yandex-map-list').hide();    
+                    $('#new_map').show();   
+                    $(".clinic_items_wrapper .clinic_item .map").height(290)
+                    eel = $(this).find('#new_map').css({'height':'40rem'});
+                    console.log(eel);
+                    ymaps.ready(initSingle);
+                    $(".ymaps-map, .ymaps-glass, .yandex-map-list, .ymaps-glass-pane").addClass("active_map");
+                });
+        
+        
+        
+        
+        
+                $("body").on("click", ".close_wrapper_map", function(){
+                    $(".close_wrapper_map").hide();
+                    $('#new_map').hide();    
+                    $(".map").css({'height':'auto'});
+                    eel = $('.yandex-map-list').show();
+                    ymaps.ready(initSingle);
+                    $(".ymaps-map, .ymaps-glass, .yandex-map-list, .ymaps-glass-pane").removeClass("active_map");
+                })
     }
     // Табы
     var tabs = function(){
