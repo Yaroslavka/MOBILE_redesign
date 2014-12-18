@@ -61,14 +61,8 @@ mb.clinicSingle = (function(){
     }
     // Карта выезжалка
     var map_slide = function(){
-
                 eel = $('.yandex-map-list');
                 ymaps.ready(initSingle);
-        
-        
-        
-        
-        
                 $("body").on('click', '.map', function(){
                     $(".close_wrapper_map").show();
                     $('.yandex-map-list').hide();    
@@ -79,11 +73,6 @@ mb.clinicSingle = (function(){
                     ymaps.ready(initSingle);
                     $(".ymaps-map, .ymaps-glass, .yandex-map-list, .ymaps-glass-pane").addClass("active_map");
                 });
-        
-        
-        
-        
-        
                 $("body").on("click", ".close_wrapper_map", function(){
                     $(".close_wrapper_map").hide();
                     $('#new_map').hide();    
@@ -96,64 +85,10 @@ mb.clinicSingle = (function(){
     // Табы
     var tabs = function(){
         $("body").on("click", ".clinic_tabs span", function(){
-            var tab_class = $(this).attr("class").split(" ")[0],
-                is_active = $(this).attr("class").split(" ")[1];
-        // Добавление активов
-            if($(this).hasClass("active")){
-                $(this).removeClass("active");
-            } 
-            else{
-                $(".clinic_tabs span").removeClass("active");
-                $(this).addClass("active");
-            }
-            
-       // Логика вывода блоков        
-        switch (tab_class) {
-          case "tab_info":
-                if(!is_active){
-                    $(".tab_content").height($(".info_clinic").height());
-                    $(".info_clinic").show().animate({"left":"0"},400, function(){
-                        $(".hide_block").hide();
-                    });
-                    $(".reviews_clinic_wrapper").animate({"right":"-103%"},400, function(){$(this).hide()});
-                    $(".doc_ico").addClass("closeTab").find("a").hide();
-                    $(".close_tab").css({"display":"block"});
-                }
-                else{
-                    $(".tab_content").height(0);
-                    $(".hide_block").show();
-                    $(".info_clinic").animate({"left":"-100%"},400, function(){$(this).hide()});
-                    $(".doc_ico").removeClass("closeTab").find("a").show();
-                    $(".close_tab").hide();
-                }
-            break
-              case "tab_review":
-                    if(!is_active){
-                        $(".tab_content").height($(".reviews_clinic_wrapper").height());
-                        $(".reviews_clinic_wrapper").show().animate({"right":"0"},400, function(){
-                            $(".hide_block").hide();
-                        });
-                        $(".info_clinic").animate({"left":"-100%"},400, function(){$(this).hide()});
-                        $(".doc_ico").addClass("closeTab");
-                        $(".doc_ico").addClass("closeTab").find("a").hide(); 
-                        $(".close_tab").css({"display":"block"});
-                    }
-                    else{
-                        $(".tab_content").height(0);
-                        $(".hide_block").show();
-                        $(".reviews_clinic_wrapper").animate({"right":"-103%"},400, function(){$(this).hide()});
-                        $(".doc_ico").removeClass("closeTab");
-                        $(".doc_ico").removeClass("closeTab").find("a").show();
-                        $(".close_tab").hide();
-                    }
-                break
-               default:
-
-            }
-        });
-        $("body").on("click", ".close_tab", function(){
-            $(".clinic_tabs .active").trigger("click")
-            return false;
+            $(".clinic_tabs span").removeClass("active");
+            $(this).addClass("active");
+            $('.tab_box').hide();
+            $('.' + $(this).attr('data-content-tab')).show().addClass('animated fadeInLeft');
         });
     }
     var select_specialist = function(){

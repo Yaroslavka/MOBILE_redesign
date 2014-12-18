@@ -40,23 +40,24 @@
                 </div>
                 <?php $this->renderPartial('//clinic/elements/record',array('model'=>$model));?>
                 <div class="clinic_tabs clearfix">
-                    <span class="tab_info">Информация</span>
-                    <span class="tab_review">Отзывы</span>
+                    <span data-content-tab='doctors_tab' class="tab_doc active">DOC</span>
+                    <span data-content-tab='info_tab' class="tab_info">О клинике</span>
+                    <span data-content-tab='reviews_tab' class="tab_review">Отзывы</span>
                 </div>
                 <div class="tab_content">
-                    <div class="info_clinic">
+                    <div class="active tab_box doctors_tab">
+                        <div class="doctor_items_conrainer">
+                            <?php $this->renderPartial('//clinic/elements/doctor'); ?>
+                        </div>
+                        <div class="similar_clinic_wrapper similar_doctors_wrapper">
+                            <?php $this->renderPartial('//clinic/elements/similar',array('model'=>$model)); ?>
+                        </div>
+                   </div>
+                    <div class="tab_box info_tab info_clinic">
                         <?php $this->renderPartial('//clinic/elements/info',array('model'=>$model));?>
                     </div>
-                    <div class="reviews_clinic_wrapper">
+                    <div class="tab_box reviews_tab reviews_clinic_wrapper">
                         <?php $this->renderPartial('//clinic/elements/comments',array('model'=>$model)); ?>
-                    </div>
-                </div>
-                <div class="hide_block">
-                    <div class="doctor_items_conrainer">
-                        <?php $this->renderPartial('//clinic/elements/doctor'); ?>
-                    </div>
-                    <div class="similar_clinic_wrapper similar_doctors_wrapper">
-                        <?php $this->renderPartial('//clinic/elements/similar',array('model'=>$model)); ?>
                     </div>
                 </div>
             </div>
