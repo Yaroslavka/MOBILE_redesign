@@ -126,6 +126,65 @@ mb.clinicSingle = (function(){
             return false;
         });
     }
+    // Динамический рейтинг
+    var rate_dinamic = function(){
+        var color = {
+            red: ['#b51a1a', '#f7dddd'],
+            orange: ['#ffa422', '#ffe1b7'],
+            blue: ['#6589ae', '#d9e3ec']
+        }
+        if(7 < $('.top_clinic_single .count').text()){
+            $('.top_clinic_single .count').css({'color':color.blue[0]});
+            $(".top_clinic_single .rate_box .desc  span").css({'background':color.blue[0]});
+            $(".top_clinic_single .rate_box .desc").css({'color':color.blue[1]});
+        }else if(4 < $('.doctor_wrapper .count').text()){
+            $('.top_clinic_single .count').css({'color':color.orange[0]});
+            $(".top_clinic_single .rate_box .desc  span").css({'background':color.orange[0]});
+            $(".top_clinic_single .rate_box .desc").css({'background':color.orange[1]});
+        }else{
+            $('.top_clinic_single .count').css({'color':color.red[0]});
+            $(".top_clinic_single .rate_box .desc  span").css({'background':color.red[0]});
+            $(".top_clinic_single .rate_box .desc").css({'background':color.red[1]});
+        }
+        $(".top_clinic_single .rate_box .desc span").animate({"height": ($('.top_clinic_single .count').text() * 10) + "%"}, 1500);
+        $(".doctor_items_wrapper_menu .doctor_item").each(function(){
+            if(7 < $(this).find('.count').text()){
+                $(this).find('.count').css({'color':color.blue[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.blue[0]});
+                $(this).find(".rate_box .desc").css({'background':color.blue[1]});
+            }else if(4 < $(this).find('.count').text()){
+                $(this).find('.count').css({'color':color.orange[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.orange[0]});
+                $(this).find(".rate_box .desc").css({'background':color.orange[1]});
+            }else{
+                $(this).find('.count').css({'color':color.red[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.red[0]});
+                $(this).find(".rate_box .desc").css({'background':color.red[1]});
+            }
+               $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
+        });
+        
+        
+        
+        
+        
+        $(".similar_doctors_items .similar_doctors_item").each(function(){
+            if(7 < $(this).find('.count').text()){
+                $(this).find('.count').css({'color':color.blue[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.blue[0]});
+                $(this).find(".rate_box .desc").css({'background':color.blue[1]});
+            }else if(4 < $(this).find('.count').text()){
+                $(this).find('.count').css({'color':color.orange[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.orange[0]});
+                $(this).find(".rate_box .desc").css({'background':color.orange[1]});
+            }else{
+                $(this).find('.count').css({'color':color.red[0]});
+                $(this).find(".rate_box .desc  span").css({'background':color.red[0]});
+                $(this).find(".rate_box .desc").css({'background':color.red[1]});
+            }
+               $(this).find(".rate_box .desc span").animate({"height": ($(this).find('.count').text() * 10) + "%"}, 1500);
+        });
+    }
     // Accordion на NETWORK
     var network_accordion = mb.network_accordion;
     var init = function(){
@@ -138,6 +197,7 @@ mb.clinicSingle = (function(){
         tabs();
         select_specialist();
         cooment();
+        rate_dinamic();
     }
     return {
         init: init

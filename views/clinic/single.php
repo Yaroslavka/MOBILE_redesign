@@ -40,7 +40,7 @@
                 </div>
                 <?php $this->renderPartial('//clinic/elements/record',array('model'=>$model));?>
                 <div class="clinic_tabs clearfix">
-                    <span data-content-tab='doctors_tab' class="tab_doc active">DOC</span>
+                    <span data-content-tab='doctors_tab' class="tab_doc active"></span>
                     <span data-content-tab='info_tab' class="tab_info">О клинике</span>
                     <span data-content-tab='reviews_tab' class="tab_review">Отзывы</span>
                 </div>
