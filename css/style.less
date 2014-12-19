@@ -1413,9 +1413,8 @@
         position: fixed;
         left: 11.3%;
         top: 10%;
-        max-height: 70% !important;
-        height: 50%;
-    overflow: hidden;
+        height: 70% !important;
+        overflow: visible;
         width: 80%;
         z-index: 90;
         display: none;
@@ -1694,12 +1693,12 @@ width: 69%;
 .clinic_menu{
     position: relative;
     a{
-        padding: 1.563rem 2.813rem 1.563rem 5.813rem !important ;
+        padding: 2.763rem 2.813rem 2.763rem 5.813rem !important ;
         &:before{
             content: "";
             position: absolute;
             left: 2rem;
-            top: 8px;
+            top: 21px;
             background: url(../img/clinic_wwhite.png) no-repeat;
             width: 64px;
             height: 64px;
@@ -1710,12 +1709,12 @@ width: 69%;
 .doctor_menu{
     position: relative;
     a{
-        padding: 1.563rem 2.813rem 1.563rem 5.813rem !important ;
+        padding: 2.763rem 2.813rem 2.763rem 5.813rem !important ;
         &:before{
             content: "";
             position: absolute;
             left: 2rem;
-            top: 8px;
+            top: 23px;
             background: url(../img/doc_white.png) no-repeat;
             width: 64px;
             height: 34px;
@@ -1726,12 +1725,12 @@ width: 69%;
 .network_clinic_menu{
     position: relative;
     a{
-        padding: 1.563rem 2.813rem 1.563rem 5.813rem !important ;
+        padding: 2.763rem 2.813rem 2.763rem 5.813rem !important ;
         &:before{
             content: "";
             position: absolute;
             left: 2.5rem;
-            top: 21px;
+            top: 31px;
             background: url(../img/network-ico.png) no-repeat;
             width: 24px;
             height: 16px;
@@ -2089,4 +2088,30 @@ width: 69%;
 .title_similar_clinic{
     font-size: 2rem;
     padding: 0 0 0 1rem;
+}
+.header_mini.active{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 100000000000000000;
+    left: 0;
+}
+.menu_footer.active{
+    position: relative;
+    top: 5rem;
+}
+.column_btn_doctor{
+    background: #fff;
+    position: fixed;
+    width: 100% !important;
+    bottom: -1rem !important;
+    left: -1rem;
+    height: 11rem;
+    padding: 2rem 0 !important;
+    border-top: 1px solid #dce7ee;
+        .order_btn{
+            position: absolute !important;
+            left: 1rem !important;
+        }
 }

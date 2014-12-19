@@ -39,7 +39,7 @@
           
         .doctor_items_wrapper .doctor_item .doctor_wrapper .right .column_doctor{width: 82%;}
         .num_box .rate_num_wrapper .box {width: 8px; margin: 0 0 0 0.3rem}
-        .similar_doctors_item .rate_box {width: 6.125rem;}
+    
       }      
 /*----IPHONE horizont 5-----*/
       @media only screen and (min-width:550px){
@@ -697,46 +697,11 @@
         -webkit-background-size: 93%;
         background-size: 93%;
     }
-/*  Блок отзывов  */
-    .reviews_box_wrap .title{
-        display: block;
-        text-align: center;
-        font-weight: 400;
-        font-size: .9rem;
-        padding: 0 0 0.6rem;
-        line-height: 1.5rem;
-        color: #fff;
-    }
     .reviews_box{
-        width: 66%;
-        background: url(../img/comment_ico.png) no-repeat;
-        background-size: contain;
-        height: 25px;
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-align: center;
-        position: relative;
-        margin: 0 0 1rem;
+        width: 50px;
     }
-    .reviews_box span{
-        display: block;
-        text-decoration: none;
-        width: 100%;
-        color: #fff;
-        text-align: left;
-        height: 100%;
-        text-align: center;
-        padding: 0.5rem 0 0;
-    }
-    .rate_box .desc:before {
-        content: "";
-        position: absolute;
-        right: -1.6rem;
-        top: -17px;
-        background: url(../img/yes_ico.png) no-repeat;
-        width: 25px;
-        height: 25px;
-        background-size: 50%;
+    .shedule_container .time_row>div {
+        margin: 0 0 0 10px;
     }
     .reviews_box_wrap{
         right: 0 !important;
@@ -746,6 +711,47 @@
     }
     .full_btn {
         width: 80%!important;
+    }
+    .shedule_container .time_row>div:first-child:before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        top: 2px;
+        background: url(../img/time_ico.png) no-repeat;
+        width: 17px;
+        height: 17px;
+        background-size: 70%;
+    }
+    .clinic_single .beside_subway_wrapper{
+        width: 60%;
+    }
+    .clinic_tabs span{
+        height: 6rem;
+        line-height: 6rem;
+    }
+    .active.tab_doc:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url(../img/doc_white.png) no-repeat;
+        width: 30px;
+        height: 30px;
+        margin: -17px 0 0 -15px;
+        background-size: contain;
+    }
+    .close_wrapper_map{
+        width: 6rem;
+    }
+    .close_wrapper_map .close {
+        width: 39px;
+        height: 39px;
+        background: url(../img/close_order.png) no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -20px 0 0 -10px;
+        background-size: 60%;
     }
     .doctor_list+.footer .all_specialist span:before {
         content: "";
@@ -826,9 +832,6 @@
     }
     .items_specialist_list_check{
         height: 105.5%
-    }
-    .rate_box .count {
-        padding: 0 2rem 4px .5rem;
     }
     .doctor_items_wrapper .doctor_item .second_name {
         margin: 0 0 0.4rem;

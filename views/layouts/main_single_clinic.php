@@ -36,9 +36,6 @@
     </div>
             <?php echo $content; ?>
 </div>
-<div class="footer footer_three clearfix">
-    <div class='call_btn'><a href='tel:+7 (499) 705-35-35'></a></div>
-</div>
 <div class="popup_search main">
     <?php $this->renderPartial('//layouts/elements/search'); ?>
 </div>

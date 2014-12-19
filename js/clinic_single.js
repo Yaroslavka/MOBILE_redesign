@@ -98,7 +98,7 @@ mb.clinicSingle = (function(){
                $("#clinic-spec").show();
                 var count_items = $(".items_specialist_list_check li").length,
                 count_height = $(".items_specialist_list_check li:first").height();
-             $("#clinic-spec").height(count_items * count_height - 10);
+             //$("#clinic-spec").height(count_items * count_height - 10);
           return false;
         });  
         $("body").on("click", ".btn_wrap_spec a", function(){

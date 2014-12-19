@@ -161,6 +161,7 @@ var flag_fixed = true
                     });
                 }
                 else{
+                    $(".header_mini, .menu_footer").removeClass("active");
                     $(".menu_nav_wrapper").animate({"right":"-80%"},200, function(){
                         $(".menu_nav_wrapper").hide();
                     });
@@ -171,6 +172,7 @@ var flag_fixed = true
                  $("<a href='#' class='overlay_menu'></a>").appendTo("body")
                 // Главная
                 if(that.hasClass("main_menu_footer")){
+                    $(".menu_nav_wrapper, .menu_nav_wrapper ul").css({'top':'0'});
                     that.addClass("active");
                     $(".footer").addClass('index_layer');
                     $(".menu_nav_wrapper").show();
@@ -179,6 +181,7 @@ var flag_fixed = true
                     $("html, body").addClass("ovh");
                 }
                 else{
+                    $(".header_mini, .menu_footer").addClass("active");
                     that.addClass("active");
                     $("html, body").addClass("ovh");
                     $(".menu_nav_wrapper").show();
