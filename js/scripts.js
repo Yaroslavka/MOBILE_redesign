@@ -207,6 +207,7 @@ var flag_fixed = true
                 else{
                     $(".menu_nav_wrapper").animate({"right":"-80%"},200, function(){
                         $(".menu_nav_wrapper").hide();
+												$(".search_content_section, .header_mini").removeClass("active");
                     });
                     $(".page, .footer").animate({"left":"0"},250);
                 }

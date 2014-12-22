@@ -5,12 +5,12 @@ mb.doctorList = (function(){
         $("body").on("click", ".search_content_section .left_box", function(){  
             $(".search_content_section").hide();
             $(".popup_search").css({"top": $(".header_mini").height()});
-            $(".clinic_list .content").css({"top": $(".popup_search").height()});
+            $(".clinic_list .content, .network_list .content").css({"top": $(".popup_search").height()});
         });
         $("body").on("click", ".search_section .close", function(){
             $(".search_content_section").show();
             $(".popup_search").css({"top":"-100%"});
-            $(".clinic_list .content, .header_mini").css({"top": "0"});
+            $(".clinic_list .content, .header_mini, .network_list .content").css({"top": "0"});
         });
         $("body").on("click", ".overlay", function(){
             $(".popup_search").animate({"top":"-100%"},400, function(){
@@ -59,6 +59,7 @@ mb.doctorList = (function(){
             orange: ['#ffa422', '#ffe1b7'],
             blue: ['#6589ae', '#d9e3ec']
         }
+				// :not(.similar_clinic_wrapper)
         $(".clinic_item").each(function(){
             if(7 < $(this).find('.count').text()){
                 $(this).find('.count').css({'color':color.blue[0]});
