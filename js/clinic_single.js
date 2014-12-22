@@ -2,14 +2,7 @@ mb.clinicSingle = (function(){
 // Сворачивает и фиксит верхний блок при прокрутке
     var hideFix = mb.hideFix;
     var scrollHide = function(){
-        $(window).on("scroll", function(){
-           hideFix({
-               wrapper : $(".page"),
-               point: $(".clinic_tabs"),
-               add_class: "clinic_single_hide",
-               clone_el: $(".column_btn_doctor")
-           });
-        });
+
     }
     var heightServiceTable = function(){
         $(".service-clinic-table .sort-clinic .row").each(function(){
@@ -93,12 +86,12 @@ mb.clinicSingle = (function(){
     }
     var select_specialist = function(){
         $("body").on("click", ".select_specialist", function(){
-            $("<a href='#' class='overlay'></a>").appendTo("body");
-            $(".page").addClass("fix");
+           $("<a href='#' class='overlay'></a>").appendTo("body");
+//                $(".page").addClass("fix");
                $("#clinic-spec").show();
                 var count_items = $(".items_specialist_list_check li").length,
                 count_height = $(".items_specialist_list_check li:first").height();
-             //$("#clinic-spec").height(count_items * count_height - 10);
+             $("#clinic-spec").height(count_items * count_height - 10);
           return false;
         });  
         $("body").on("click", ".btn_wrap_spec a", function(){

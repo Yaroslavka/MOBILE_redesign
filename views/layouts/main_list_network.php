@@ -21,15 +21,6 @@
         <?php echo $content; ?>
     </div>
 </div>
-<div class="footer footer_three clearfix">
-    <div class="bottom">
-        <div class="menu_wrapper_bottom">
-            <div class="all_specialist"></div>
-            <div class="doctor_list"><a href="<?php echo Yii::app()->createUrl('doctor/index'); ?>"></a></div>
-            <div class="menu_footer"><a href="#nav-panel"></a></div>
-        </div>
-    </div>
-</div>
 <div class="popup_search main">
     <?php $this->renderPartial('//layouts/elements/search'); ?>
 </div>

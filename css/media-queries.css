@@ -763,6 +763,51 @@
         background-size: 50%;
         height: 21px!important;
     }
+    .call_btn {
+        margin: 1rem 0 1rem!important;
+        color: #fff;
+        font-size: 2rem;
+        background: #aecb66;
+        width: 69px;
+        height: 84px;
+        position: fixed;
+        right: 1rem;
+        bottom: -4rem;
+        border-radius: 5px;
+        float: right;
+        background: url(../img/call_btn.png) no-repeat;
+        background-size: contain;
+    }
+    .clinic_items_wrapper .column_btn_doctor .order_btn {
+        color: #fff;
+        font-size: 2rem;
+        background: #F59009;
+        display: inline-block;
+        padding: 2rem .5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 70%;
+        text-align: center;
+        left: 33rem;
+        bottom: 2rem;
+    }
+    .column_btn_doctor{
+        height: 9rem;
+    }
+    .menu_nav_wrapper ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        line-height: 1.7rem;
+        padding: 1.5rem 2.213rem !important;
+    }
+    .menu_nav_wrapper .bottom_menu {
+        border: 0;
+        padding: 2rem 0;
+    }
+    .menu_nav_wrapper ul li a{
+        font-weight: normal;
+    }
 /*    ----------------------------------------------------      */
     .footer .back:before, .footer .back_two:before {
         background: url(../img/close_ico.png) no-repeat!important;
