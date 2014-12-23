@@ -161,7 +161,7 @@ var flag_fixed = true
                     });
                 }
                 else{
-                    $(".header_mini, .search_content_section").removeClass("active");
+                    $(".header_mini, .search_content_section, .menu_wrapper_bottom").removeClass("active");
                     $(".menu_nav_wrapper").animate({"right":"-80%"},200, function(){
                         $(".menu_nav_wrapper").hide();
                     });
@@ -181,7 +181,7 @@ var flag_fixed = true
                     $("html, body").addClass("ovh");
                 }
                 else{
-                    $(".header_mini, .search_content_section").addClass("active");
+                    $(".header_mini, .search_content_section, .menu_wrapper_bottom").addClass("active");
                     that.addClass("active");
                     $("html, body").addClass("ovh");
                     $(".menu_nav_wrapper").show();

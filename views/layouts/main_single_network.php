@@ -28,6 +28,12 @@
 <body class="net_sing">
 <div id="network_single" class="page clinic_single network_single">
     <?php $this->renderPartial('//layouts/elements/header'); ?>
+    <div class="header_top_section clearfix">
+      <div class="menu_wrapper_bottom">
+          <div class="search_specialist"><a class="full_link items_service" href="<?php echo Yii::app()->createUrl('/search_clinic/setevaya');?>"><span>Все сетевые клинники</span></a></div>
+          <div class="menu_footer"><a href="#nav-panel"></a></div>
+      </div>
+    </div>
     <div class="content">
         <?php echo $content; ?>
     </div>

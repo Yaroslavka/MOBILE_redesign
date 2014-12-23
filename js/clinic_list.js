@@ -61,6 +61,7 @@ mb.doctorList = (function(){
         }
 				// :not(.similar_clinic_wrapper)
         $(".clinic_item").each(function(){
+					console.log($(this).find('.count').text())
             if(7 < $(this).find('.count').text()){
                 $(this).find('.count').css({'color':color.blue[0]});
                 $(this).find(".rate_box .desc  span").css({'background':color.blue[0]});
