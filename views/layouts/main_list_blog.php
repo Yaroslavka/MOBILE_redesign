@@ -19,6 +19,15 @@
     <div class="fixed_top_container">
         <?php $this->renderPartial('//layouts/elements/header'); ?>
     </div>
+    <div class="search_content_section clearfix">
+    <div class="left_box">
+        <p class="title">Медицинский блог</p>
+        <!-- <div class="infoabout"><?php //echo !empty($this->pageTop)?$this->pageTop:''; ?></div> -->
+    </div>
+    <div class="right_box">
+            <div class="menu_footer"><a href="#nav-panel"></a></div>
+    </div>
+</div>
     <div class="content blog_content handbook_patient_content">
         <?php echo $content; ?>
     </div>
