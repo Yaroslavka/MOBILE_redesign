@@ -27,5 +27,9 @@
 <?php $this->renderPartial('//layouts/elements/category',array('data'=>$this->data)); ?>
 <?php $this->renderPartial('//layouts/elements/menu'); ?>
 <?php $this->renderPartial('//layouts/elements/order'); ?>
+<div class="fixed_bottom_container">
+    <span>Поможем найти специалиста</span>
+    <div class="call_btn"><a href="tel:+7 (499) 705-35-35"></a></div>
+</div>
 </body>
 </html>

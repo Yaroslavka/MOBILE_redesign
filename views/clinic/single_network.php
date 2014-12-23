@@ -3,12 +3,13 @@
     <div class="clinic_item">
         <div class="clinic_wrapper clearfix">
             <div class="top_clinic_single clearfix">
-                <p class="name"><?php echo $model->title;?></p>
+               
                 <div class="left">
                     <?php $this->renderPartial('//clinic/elements/photo',array('model'=>$model));?>
                 </div>
                 <div class="right">
                     <div class="column_doctor">
+                        <p class="name"><?php echo $model->title;?></p>
                         <?php if(!empty($model->description)):?><div class="description">
                             <?php echo MobiController::cutString($model->description, 200);?>
                         </div><?php endif;?>

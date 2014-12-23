@@ -254,21 +254,6 @@ var flag_fixed = true
             }
         });
     }
-// Меню доктора клинники
-    var doctors_clinic_menu = function(){
-//        $("body").on("touchstart", ".doctors_clinic", function(){
-//           $(".content").animate({"left":"100%"}, 400, function(){
-//               $(this).hide();
-//           });
-//            $(".fixed_top").hide();  //Прячем всплываху
-//           $(".doctor_items_wrapper_menu").show().animate({"left":"0%"},400);
-//            $(".footer .menu_footer a").remove();
-//            $(".footer .menu_footer").append("<span class='back'></span>")
-//            $(this).removeClass("doctors_clinic")
-//                    .addClass("all_specialist_check")
-//                    .find("span").text("Специализации");
-//        });
-    }
 // Back footer
     var back_btn = function(){
         $("body").on("touchstart",".footer .back", function(){
@@ -389,22 +374,18 @@ var flag_fixed = true
                         $(".order_wrapper").show().animate({"top":$(".header_mini").height()}, 400); 
                     }
                     else if($(".page").hasClass("clinic_single")){
-                        $(".order_wrapper .doctor_order_name").text($(this).attr("data-clinic_name"));
-                        $(".order_wrapper .title_box span").text("на прием в клиннику");
+                        $("body").addClass("fix");
+                        $(".order_wrapper .img_wrapper img").attr('src', $('.clinic_wrapper img').attr('src'));
+                        $(".order_wrapper .doctor_order_name_first").text($(".clinic_wrapper .name").text());
+$(".order_wrapper .clinic_name").hide();
+											
+                        $(".order_wrapper .doctor_category").text($(".top_doctor_single .doctor_category").text());
+                        $(".order_wrapper .clinic_name span").text($(".doctor_snippet_clinic .clinic_name span").text());
+                        $(".order_wrapper .address_doctor").text($(".doctor_snippet_clinic .address_doctor span").text());
                         $(".order_wrapper").show().animate({"top":$(".header_mini").height()}, 400); 
                     }
             }
         });
-    // Закрытие формы
-//        $("body").on("touchstart", ".order_wrapper .close", function(){
-//           $(".order_wrapper_exit").show().animate({"top":"0"}, 400); 
-//        });
-    // zaeb_form 
-//        $("body").on("touchstart", ".order_wrapper_exit .close , .btn_no", function(){
-//           $(".order_wrapper_exit").animate({"top":"100%"}, 400, function(){
-//               $(this).hide();
-//           }); 
-//        });
     // full_exit_form
         $("body").on("click", ".order_wrapper .close", function(){
             $("body").removeClass("fix");
@@ -547,7 +528,6 @@ var flag_fixed = true
         all_specialist();
         
         rate();
-        doctors_clinic_menu();
         back_btn();
         check_menu();
         back_check_menu();
