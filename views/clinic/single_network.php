@@ -10,12 +10,12 @@
                 <div class="right">
                     <div class="column_doctor">
                         <p class="name"><?php echo $model->title;?></p>
-                        <?php if(!empty($model->description)):?><div class="description">
-                            <?php echo MobiController::cutString($model->description, 200);?>
-                        </div><?php endif;?>
                     </div>
                     <?php $this->renderPartial('//clinic/elements/rate',array('model'=>$model));?>
                 </div>
+                <?php if(!empty($model->description)):?><div class="description_network">
+                            <?php echo MobiController::cutString($model->description, 200);?>
+                        </div><?php endif;?>
                 <?php $this->renderPartial('//clinic/elements/record',array('model'=>$model));?>
             </div>
             <div class="network_accordion_wrapper">
