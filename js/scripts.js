@@ -548,3 +548,12 @@ $(".order_wrapper .clinic_name").hide();
 $(function(){
    mb.init(); 
 });
+
+
+var arr = "dima"
+
+var func = function(par){
+	var qwe = par = "wqerwrwerwerwerwe";
+}
+func(arr);
+console.log(arr)
