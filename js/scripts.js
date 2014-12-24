@@ -376,12 +376,10 @@ var flag_fixed = true
                     else if($(".page").hasClass("clinic_single")){
                         $("body").addClass("fix");
                         $(".order_wrapper .img_wrapper img").attr('src', $('.clinic_wrapper img').attr('src'));
-                        $(".order_wrapper .doctor_order_name_first").text($(".clinic_wrapper .name").text());
+                        $(".order_wrapper .doctor_order_name_first").text($(".top_clinic_single .column_doctor .name").text());
 $(".order_wrapper .clinic_name").hide();
 											
-                        $(".order_wrapper .doctor_category").text($(".top_doctor_single .doctor_category").text());
-                        $(".order_wrapper .clinic_name span").text($(".doctor_snippet_clinic .clinic_name span").text());
-                        $(".order_wrapper .address_doctor").text($(".doctor_snippet_clinic .address_doctor span").text());
+                        
                         $(".order_wrapper").show().animate({"top":$(".header_mini").height()}, 400); 
                     }
             }
@@ -548,12 +546,3 @@ $(".order_wrapper .clinic_name").hide();
 $(function(){
    mb.init(); 
 });
-
-
-var arr = "dima"
-
-var func = function(par){
-	var qwe = par = "wqerwrwerwerwerwe";
-}
-func(arr);
-console.log(arr)
